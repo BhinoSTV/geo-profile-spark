@@ -18,31 +18,59 @@ interface Publication {
 const publications: Publication[] = [
   {
     id: '1',
-    title: 'Satellite-based Groundwater Monitoring in Arid Regions: A Machine Learning Approach',
-    journal: 'Remote Sensing of Environment',
-    year: '2023',
+    title: 'Assessment of the spatiotemporal dynamics of river discharge and groundwater recharge to support sustainable water management for irrigated agriculture in the Padsan River watershed',
+    journal: 'Earth Science Informatics',
+    year: '2025',
     status: 'published',
-    doi: 'https://doi.org/10.1016/example',
-    tags: ['Remote Sensing', 'Groundwater', 'Machine Learning', 'Arid Regions'],
-    abstract: 'This study presents a novel approach to groundwater monitoring using satellite data and machine learning algorithms...'
+    doi: 'https://doi.org/10.1007/s12145-025-01707-1',
+    tags: ['Groundwater Recharge', 'River Discharge', 'Sustainable Agriculture', 'Water Management', 'Remote Sensing'],
+    abstract: 'This study assesses the spatiotemporal dynamics of river discharge and groundwater recharge to support sustainable water management for irrigated agriculture in the Padsan River watershed using advanced remote sensing and hydrological modeling techniques.'
   },
   {
     id: '2',
-    title: 'Climate Change Impacts on Water Resources: A GIS-based Assessment',
-    journal: 'Journal of Hydrology',
-    year: '2024',
+    title: 'Quantified Impact of Projected Climate Change on Groundwater Recharge and River Discharge Leveraging Open Access Geospatial Data',
+    journal: 'Under Review',
+    year: '2025',
     status: 'under-review',
-    tags: ['Climate Change', 'Water Resources', 'GIS', 'Impact Assessment'],
-    abstract: 'We assess the potential impacts of climate change on regional water resources using advanced GIS modeling techniques...'
+    tags: ['Climate Change', 'Groundwater Recharge', 'River Discharge', 'Geospatial Data', 'Impact Assessment'],
+    abstract: 'This research quantifies the projected impacts of climate change on groundwater recharge and river discharge patterns using open access geospatial data and climate models to support water resource planning and adaptation strategies.'
   },
   {
     id: '3',
-    title: 'Integration of GRACE Data for Large-scale Groundwater Depletion Analysis',
-    journal: 'Water Resources Research',
-    year: '2024',
-    status: 'in-preparation',
-    tags: ['GRACE', 'Groundwater Depletion', 'Satellite Gravimetry'],
-    abstract: 'This research integrates GRACE satellite data with local measurements to provide comprehensive groundwater depletion maps...'
+    title: 'Municipal-level Flood Vulnerability, Extent and Depth Assessment using Validated High-Resolution Satellite Data and Interactive Web-based Flood Tool',
+    journal: 'Under Review',
+    year: '2025',
+    status: 'under-review',
+    tags: ['Flood Vulnerability', 'Satellite Data', 'Web-based Tools', 'Municipal Planning', 'Disaster Risk'],
+    abstract: 'Development of a comprehensive municipal-level flood vulnerability assessment using validated high-resolution satellite data and an interactive web-based flood tool for enhanced disaster risk management and urban planning.'
+  },
+  {
+    id: '4',
+    title: 'Quantifying Impacts of Climate and Land Use Change on Groundwater Hydrology and Sustainability of the Quiaoit River Watershed',
+    journal: 'Advances in Social Science, Education and Humanities Research',
+    year: '2022',
+    status: 'published',
+    doi: 'https://doi.org/10.2991/assehr.k.220103.018',
+    tags: ['Climate Change', 'Land Use Change', 'Groundwater Hydrology', 'Watershed Sustainability'],
+    abstract: 'This study quantifies the impacts of climate and land use change on groundwater hydrology and sustainability in the Quiaoit River Watershed using integrated modeling approaches and scenario analysis.'
+  },
+  {
+    id: '5',
+    title: 'Flood Risk Assessment as Affected by Land Use Change for Policy Intervention: a case study of Quiaoit River Watershed',
+    journal: 'Philippine Agricultural and Biosystems Engineering Journal',
+    year: '2022',
+    status: 'published',
+    tags: ['Flood Risk Assessment', 'Land Use Change', 'Policy Intervention', 'Watershed Management'],
+    abstract: 'Assessment of flood risk patterns affected by land use changes in the Quiaoit River Watershed, providing scientific basis for policy interventions and sustainable watershed management strategies.'
+  },
+  {
+    id: '6',
+    title: 'Quantifying the Impact of Land Use Change as Affected by Groundwater Hydrology Using SWAT-MODFLOW Modeling',
+    journal: 'Philippine Agricultural and Biosystems Engineering Journal',
+    year: '2022',
+    status: 'published',
+    tags: ['Land Use Change', 'Groundwater Hydrology', 'SWAT-MODFLOW', 'Hydrological Modeling'],
+    abstract: 'Integration of SWAT and MODFLOW models to quantify the impact of land use changes on groundwater hydrology, providing insights for sustainable land and water resource management.'
   }
 ];
 
@@ -71,7 +99,7 @@ const PublicationsSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">Publications & Research</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Peer-reviewed publications and ongoing research in remote sensing and water resources
+            Peer-reviewed publications and ongoing research in remote sensing, water resources, and climate change adaptation
           </p>
         </div>
 

@@ -21,25 +21,27 @@ const Index = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="text-left space-y-4">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  I am a passionate researcher specializing in remote sensing and GIS applications 
-                  for water resource management. My work focuses on developing innovative solutions 
-                  for groundwater monitoring and climate change adaptation using cutting-edge 
-                  satellite technologies.
+                  I am Julius I. Jimenez, a Professional Agricultural and Biosystems Engineer 
+                  (Lic.#8633) and PhD Scholar specializing in Remote Sensing and Geographic 
+                  Information Systems. Currently pursuing dual doctorate degrees at Asian 
+                  Institute of Technology, Thailand, and Indian Institute of Technology, Roorkee, India.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  With expertise in machine learning, spatial analysis, and Earth observation 
-                  systems, I contribute to understanding and addressing global water challenges 
-                  through interdisciplinary research approaches.
+                  As Center Head of the Geospatial Data Science and Technology Center (GeoSpaDa Hub) 
+                  and RS&GIS Specialist at AIT-RRC.AP, I focus on developing innovative solutions 
+                  for water resources management, climate change adaptation, and sustainable 
+                  agricultural practices through cutting-edge geospatial technologies.
                 </p>
               </div>
               <div className="bg-gradient-to-br from-blue-500 to-green-500 rounded-lg p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">Research Focus</h3>
                 <ul className="space-y-2">
-                  <li>• Satellite-based groundwater monitoring</li>
+                  <li>• Integrated Water Resources Management (IWRM)</li>
+                  <li>• Groundwater recharge modeling and sustainability</li>
                   <li>• Climate change impact assessment</li>
-                  <li>• Machine learning in Earth sciences</li>
-                  <li>• GIS and spatial data analysis</li>
-                  <li>• Water resource sustainability</li>
+                  <li>• Remote sensing applications for agriculture</li>
+                  <li>• Geospatial data science and web-based tools</li>
+                  <li>• Flood risk assessment and disaster resilience</li>
                 </ul>
               </div>
             </div>
@@ -56,7 +58,7 @@ const Index = () => {
       <footer className="bg-muted py-8 border-t">
         <div className="container mx-auto px-6 text-center">
           <p className="text-muted-foreground">
-            © 2024 Dr. [Your Name]. All rights reserved. | Built with modern web technologies
+            © 2024 Julius I. Jimenez. All rights reserved. | Professional Agricultural and Biosystems Engineer | PhD Scholar
           </p>
         </div>
       </footer>

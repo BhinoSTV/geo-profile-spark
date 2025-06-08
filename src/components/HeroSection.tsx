@@ -21,20 +21,20 @@ const HeroSection = () => {
         <div className="max-w-4xl mx-auto">
           {/* Profile Photo Placeholder */}
           <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-500 to-green-500 flex items-center justify-center text-6xl font-bold text-white shadow-2xl">
-            JD
+            JI
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-slate-700 to-green-600 bg-clip-text text-transparent">
-            Dr. [Your Name]
+            Julius I. Jimenez
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-            Remote Sensing & GIS Specialist
+            Professional Agricultural and Biosystems Engineer | PhD Scholar
           </p>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Advancing groundwater research through innovative remote sensing technologies 
-            and geospatial analysis for climate change adaptation
+            Remote Sensing & GIS Specialist advancing water resources management through 
+            innovative geospatial technologies and climate change adaptation research
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

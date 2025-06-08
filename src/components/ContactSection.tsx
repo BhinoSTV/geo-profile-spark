@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, MapPin, Download, Send } from 'lucide-react';
+import { Mail, MapPin, Download, Send, Phone } from 'lucide-react';
 import { toast } from 'sonner';
 
 const ContactSection = () => {
@@ -57,11 +57,19 @@ const ContactSection = () => {
               <CardContent className="space-y-4">
                 <div className="flex items-center gap-3">
                   <Mail size={18} className="text-muted-foreground" />
-                  <span>your.email@institution.edu</span>
+                  <span>juliusijimenez053@yahoo.com</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone size={18} className="text-muted-foreground" />
+                  <div className="space-y-1">
+                    <div>(+63) 956-306-3460</div>
+                    <div>(+91) 843-917-6867</div>
+                    <div>(+66) 65-381-6113</div>
+                  </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin size={18} className="text-muted-foreground" />
-                  <span>Your Institution, City, Country</span>
+                  <span>#3 Salbang Paoay (2902), Ilocos Norte, Philippines</span>
                 </div>
               </CardContent>
             </Card>
@@ -83,25 +91,25 @@ const ContactSection = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle>Research Interests</CardTitle>
+                <CardTitle>Current Research</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-2 text-sm">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                    <span>Remote Sensing Applications</span>
+                <div className="space-y-3 text-sm">
+                  <div className="flex items-start gap-2">
+                    <span className="w-2 h-2 bg-blue-500 rounded-full mt-2"></span>
+                    <span>Integrated Water Resources Management (IWRM) for Padsan River Watershed</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                    <span>Groundwater Monitoring</span>
+                  <div className="flex items-start gap-2">
+                    <span className="w-2 h-2 bg-green-500 rounded-full mt-2"></span>
+                    <span>Development of web-based Dynamic Decision Support Framework (Dynamic DSF)</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                    <span>Climate Change Adaptation</span>
+                  <div className="flex items-start gap-2">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full mt-2"></span>
+                    <span>Groundwater Recharge Modelling for Sustainable Agricultural Water</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
-                    <span>GIS and Spatial Analysis</span>
+                  <div className="flex items-start gap-2">
+                    <span className="w-2 h-2 bg-orange-500 rounded-full mt-2"></span>
+                    <span>Climate Change Impact Assessment on Water Resources</span>
                   </div>
                 </div>
               </CardContent>

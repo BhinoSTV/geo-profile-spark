@@ -17,48 +17,132 @@ interface CVEntry {
   link?: string;
 }
 
-// Sample data - replace with your actual CV data
 const cvData: CVEntry[] = [
+  // Education
   {
     id: '1',
     type: 'education',
-    title: 'Ph.D. in Remote Sensing',
-    institution: 'University Name',
-    location: 'City, Country',
-    year: '2020',
-    description: 'Dissertation on groundwater monitoring using satellite data',
-    tags: ['Remote Sensing', 'Groundwater', 'Satellite Data']
+    title: 'PhD, Remote Sensing and Geographic Information Systems',
+    institution: 'Asian Institute of Technology',
+    location: 'Pathum Thani, Thailand',
+    year: '2022-Present',
+    description: 'PhD Scholar/Candidate in Remote Sensing and GIS applications for water resources management',
+    tags: ['Remote Sensing', 'GIS', 'Water Resources', 'Climate Change']
   },
   {
     id: '2',
-    type: 'work',
-    title: 'Senior Research Scientist',
-    institution: 'Research Institute',
-    location: 'City, Country',
-    year: '2021-Present',
-    description: 'Leading research projects on climate change impacts on water resources',
-    tags: ['Climate Change', 'Water Resources', 'GIS']
+    type: 'education',
+    title: 'PhD, Water Resources Development and Management',
+    institution: 'Indian Institute of Technology - Roorkee',
+    location: 'Uttarakhand, India',
+    year: '2022-Present',
+    description: 'Dual doctorate degree program focusing on water resources development and management',
+    tags: ['Water Resources', 'Hydrology', 'Groundwater']
   },
   {
     id: '3',
-    type: 'publication',
-    title: 'Groundwater Depletion Assessment Using Remote Sensing',
-    institution: 'Journal of Hydrology',
-    location: 'International',
-    year: '2023',
-    description: 'Peer-reviewed article on satellite-based groundwater monitoring',
-    tags: ['Remote Sensing', 'Groundwater', 'GRACE'],
-    link: 'https://doi.org/example'
+    type: 'education',
+    title: 'MS, Engineering - Soil and Water Resources Engineering',
+    institution: 'Mariano Marcos State University-Graduate School',
+    location: 'City of Batac, Ilocos Norte, Philippines',
+    year: '2017-2020',
+    description: 'Master of Science in Engineering specializing in Soil and Water Resources Engineering',
+    tags: ['Soil Engineering', 'Water Resources', 'Environmental Engineering']
   },
   {
     id: '4',
-    type: 'training',
-    title: 'Advanced GIS and Remote Sensing',
-    institution: 'NASA Training Center',
-    location: 'USA',
+    type: 'education',
+    title: 'BS, Agricultural Engineering',
+    institution: 'Mariano Marcos State University',
+    location: 'City of Batac, Philippines',
+    year: '2016',
+    description: 'Bachelor of Science in Agricultural Engineering',
+    tags: ['Agricultural Engineering', 'Irrigation', 'Water Management']
+  },
+  // Work Experience
+  {
+    id: '5',
+    type: 'work',
+    title: 'Center Head/Lead Research',
+    institution: 'Geospatial Data Science and Technology Center (GeoSpaDa Hub)',
+    location: 'Ilocos Norte, Philippines',
+    year: '2023-Present',
+    description: 'Leading research initiatives in geospatial data science and technology applications',
+    tags: ['Geospatial Analysis', 'Data Science', 'Research Leadership']
+  },
+  {
+    id: '6',
+    type: 'work',
+    title: 'RS&GIS Specialist',
+    institution: 'Asian Institute of Technology, Regional Resource Center for Asia and Pacific Region (AIT-RRC.AP)',
+    location: 'Thailand',
+    year: '2023-Present',
+    description: 'Remote Sensing and GIS specialist for regional projects across Asia and Pacific',
+    tags: ['Remote Sensing', 'GIS', 'Regional Development', 'Climate Adaptation']
+  },
+  {
+    id: '7',
+    type: 'work',
+    title: 'Instructor 1',
+    institution: 'Mariano Marcos State University, College of Agriculture Food and Sustainable Development',
+    location: 'Philippines',
+    year: '2017-Present',
+    description: 'Teaching and research in agricultural engineering and sustainable development',
+    tags: ['Teaching', 'Agricultural Engineering', 'Sustainable Development']
+  },
+  // Publications
+  {
+    id: '8',
+    type: 'publication',
+    title: 'Assessment of the spatiotemporal dynamics of river discharge and groundwater recharge',
+    institution: 'Earth Science Informatics',
+    location: 'International',
+    year: '2025',
+    description: 'Assessment of the spatiotemporal dynamics of river discharge and groundwater recharge to support sustainable water management for irrigated agriculture in the Padsan River watershed',
+    tags: ['Groundwater', 'River Discharge', 'Sustainable Agriculture', 'Water Management'],
+    link: 'https://doi.org/10.1007/s12145-025-01707-1'
+  },
+  {
+    id: '9',
+    type: 'publication',
+    title: 'Quantifying Impacts of Climate and Land Use Change on Groundwater Hydrology',
+    institution: 'Advances in Social Science, Education and Humanities Research',
+    location: 'International',
     year: '2022',
-    description: 'Intensive training on latest satellite technologies',
-    tags: ['GIS', 'Satellite Technology', 'NASA']
+    description: 'Quantifying Impacts of Climate and Land Use Change on Groundwater Hydrology and Sustainability of the Quiaoit River Watershed',
+    tags: ['Climate Change', 'Land Use Change', 'Groundwater Hydrology', 'Watershed Management'],
+    link: 'https://doi.org/10.2991/assehr.k.220103.018'
+  },
+  {
+    id: '10',
+    type: 'publication',
+    title: 'Flood Risk Assessment as Affected by Land Use Change for Policy Intervention',
+    institution: 'Philippine Agricultural and Biosystems Engineering Journal',
+    location: 'Philippines',
+    year: '2022',
+    description: 'A case study of Quiaoit River Watershed examining flood risk assessment and policy interventions',
+    tags: ['Flood Risk', 'Land Use Change', 'Policy Intervention', 'Watershed Management']
+  },
+  // Training (selected major ones)
+  {
+    id: '11',
+    type: 'training',
+    title: 'Regional Training Workshop on Enhancing Climate and Disaster Risk Resilient Cities',
+    institution: 'Regional Resource Centre for Asia and the Pacific – Asian Institute of Technology',
+    location: 'Bangkok, Thailand',
+    year: '2024',
+    description: 'Training on climate and disaster risk resilience for cities in Asia and the Pacific region',
+    tags: ['Climate Resilience', 'Disaster Risk', 'Urban Planning', 'Adaptation']
+  },
+  {
+    id: '12',
+    type: 'training',
+    title: 'International Training Workshop on Applying Geospatial Data for Governance',
+    institution: 'Mariano Marcos State University, Philippines, and Asian Institute of Technology, Thailand',
+    location: 'City of Batac, Ilocos Norte, Philippines',
+    year: '2023',
+    description: 'Resource Person/Trainer for workshop on applying geospatial data for governance towards sustainable development',
+    tags: ['Geospatial Data', 'Governance', 'Sustainable Development', 'Training']
   }
 ];
 

@@ -15,34 +15,50 @@ interface AwardItem {
 const awards: AwardItem[] = [
   {
     id: '1',
-    title: 'Excellence in Remote Sensing Research Award',
-    organization: 'International Society for Remote Sensing',
+    title: 'Best Green Financing Solution for Emission Reduction',
+    organization: '"Hacking Zero" Hackathon – Sustainability Expo, Asian Institute of Technology',
     year: '2023',
-    description: 'Recognized for outstanding contributions to groundwater monitoring using satellite technologies',
+    description: 'Recognized for innovative green financing solution during sustainability hackathon in Thailand',
     type: 'excellence'
   },
   {
     id: '2',
-    title: 'Best PhD Dissertation Award',
-    organization: 'University Name',
-    year: '2020',
-    description: 'Awarded for exceptional research on satellite-based water resource assessment',
+    title: 'DOST PhD Scholar 2022',
+    organization: 'Science Education Institute – Department of Science and Technology, Philippines',
+    year: '2022',
+    description: 'Foreign Graduate Scholarship Program for PhD in Remote Sensing and Geographic Information Systems',
     type: 'academic'
   },
   {
     id: '3',
-    title: 'Young Researcher Grant',
-    organization: 'National Science Foundation',
-    year: '2022',
-    description: 'Competitive grant for early-career researchers in Earth observation sciences',
+    title: '1st Place – Technical Paper Presenters',
+    organization: '16th International Agricultural and Biosystems Engineering Conference',
+    year: '2019',
+    description: 'First place for "Flood Risk Assessment as Affected by Land Use Change for Policy Intervention: A Quiaoit River Watershed Case Study"',
     type: 'research'
   },
   {
     id: '4',
-    title: 'Outstanding Paper Award',
-    organization: 'Remote Sensing Conference',
+    title: '2nd Place – Technical Paper Presenters',
+    organization: '16th International Agricultural and Biosystems Engineering Conference',
+    year: '2019',
+    description: 'Second place for "Quantifying the Impact of Land Use Change as Affected by Groundwater Hydrology Using SWAT-MODFLOW Modeling"',
+    type: 'research'
+  },
+  {
+    id: '5',
+    title: '1st Place Track and Field – Relay (100 m) Tournament',
+    organization: 'AIT Mini Olympics, Asian Institute of Technology',
     year: '2023',
-    description: 'Best paper award at the International Conference on Remote Sensing Applications',
+    description: 'First place in 100m relay during AIT Mini Olympics sports tournament',
+    type: 'recognition'
+  },
+  {
+    id: '6',
+    title: '1st Place Basketball Tournament',
+    organization: 'AIT Mini Olympics, Asian Institute of Technology',
+    year: '2023',
+    description: 'First place in basketball tournament during AIT Mini Olympics',
     type: 'recognition'
   }
 ];
@@ -75,7 +91,7 @@ const AwardsSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">Awards & Recognition</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Honors and achievements recognizing excellence in research and academic contributions
+            Honors and achievements recognizing excellence in research, academics, and sports
           </p>
         </div>
 
