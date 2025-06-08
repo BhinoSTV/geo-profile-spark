@@ -23,12 +23,13 @@ const HeroSection = () => {
           <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl bg-gradient-to-br from-blue-500 to-green-500 p-1">
             <div className="w-full h-full rounded-full overflow-hidden bg-background">
               <img 
-                src="/lovable-uploads/66ce9a66-f93b-4255-abb0-ee1d54d7c838.png" 
+                src="/lovable-uploads/9127bafb-69a3-431c-8fc2-5b9fc1ed255f.png" 
                 alt="Julius I. Jimenez" 
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center scale-150"
                 style={{
                   filter: 'contrast(1.1) brightness(1.05)',
-                  objectPosition: 'center 20%'
+                  objectPosition: 'center 15%',
+                  transform: 'scale(1.8) translateY(-10px)'
                 }}
               />
             </div>
