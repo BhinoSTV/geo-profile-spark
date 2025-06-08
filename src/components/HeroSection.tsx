@@ -19,9 +19,19 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Profile Photo Placeholder */}
-          <div className="w-48 h-48 mx-auto mb-8 rounded-full bg-gradient-to-br from-blue-500 to-green-500 flex items-center justify-center text-6xl font-bold text-white shadow-2xl">
-            JI
+          {/* Profile Photo */}
+          <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl bg-gradient-to-br from-blue-500 to-green-500 p-1">
+            <div className="w-full h-full rounded-full overflow-hidden bg-background">
+              <img 
+                src="/lovable-uploads/66ce9a66-f93b-4255-abb0-ee1d54d7c838.png" 
+                alt="Julius I. Jimenez" 
+                className="w-full h-full object-cover object-center"
+                style={{
+                  filter: 'contrast(1.1) brightness(1.05)',
+                  objectPosition: 'center 20%'
+                }}
+              />
+            </div>
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-slate-700 to-green-600 bg-clip-text text-transparent">
@@ -29,7 +39,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-            Professional Agricultural and Biosystems Engineer | PhD Scholar
+            Professional Agricultural and Biosystems Engineer (Lic.#8633) | PhD Scholar
           </p>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
