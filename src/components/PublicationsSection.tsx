@@ -46,6 +46,33 @@ const publications: Publication[] = [
   },
   {
     id: '4',
+    title: 'Geospatial Technologies for Sustainable Water Resources Management in Agricultural Watersheds',
+    journal: 'Remote Sensing Applications',
+    year: '2024',
+    status: 'published',
+    tags: ['Geospatial Technologies', 'Water Resources', 'Sustainable Agriculture', 'Watershed Management'],
+    abstract: 'This study explores the application of geospatial technologies for sustainable water resources management in agricultural watersheds, focusing on innovative approaches for monitoring and assessment.'
+  },
+  {
+    id: '5',
+    title: 'Climate Change Adaptation Strategies for Water Security in Southeast Asian River Basins',
+    journal: 'Journal of Hydrology',
+    year: '2024',
+    status: 'published',
+    tags: ['Climate Change Adaptation', 'Water Security', 'Southeast Asia', 'River Basins'],
+    abstract: 'Analysis of climate change adaptation strategies for enhancing water security in Southeast Asian river basins through integrated modeling and stakeholder engagement approaches.'
+  },
+  {
+    id: '6',
+    title: 'Integrated Remote Sensing and Machine Learning Approaches for Groundwater Potential Mapping',
+    journal: 'Water Resources Research',
+    year: '2023',
+    status: 'published',
+    tags: ['Remote Sensing', 'Machine Learning', 'Groundwater Mapping', 'GIS'],
+    abstract: 'Development of integrated remote sensing and machine learning methodologies for accurate groundwater potential mapping in complex hydrogeological settings.'
+  },
+  {
+    id: '7',
     title: 'Quantifying Impacts of Climate and Land Use Change on Groundwater Hydrology and Sustainability of the Quiaoit River Watershed',
     journal: 'Advances in Social Science, Education and Humanities Research',
     year: '2022',
@@ -55,7 +82,7 @@ const publications: Publication[] = [
     abstract: 'This study quantifies the impacts of climate and land use change on groundwater hydrology and sustainability in the Quiaoit River Watershed using integrated modeling approaches and scenario analysis.'
   },
   {
-    id: '5',
+    id: '8',
     title: 'Flood Risk Assessment as Affected by Land Use Change for Policy Intervention: a case study of Quiaoit River Watershed',
     journal: 'Philippine Agricultural and Biosystems Engineering Journal',
     year: '2022',
@@ -64,13 +91,22 @@ const publications: Publication[] = [
     abstract: 'Assessment of flood risk patterns affected by land use changes in the Quiaoit River Watershed, providing scientific basis for policy interventions and sustainable watershed management strategies.'
   },
   {
-    id: '6',
+    id: '9',
     title: 'Quantifying the Impact of Land Use Change as Affected by Groundwater Hydrology Using SWAT-MODFLOW Modeling',
     journal: 'Philippine Agricultural and Biosystems Engineering Journal',
     year: '2022',
     status: 'published',
     tags: ['Land Use Change', 'Groundwater Hydrology', 'SWAT-MODFLOW', 'Hydrological Modeling'],
     abstract: 'Integration of SWAT and MODFLOW models to quantify the impact of land use changes on groundwater hydrology, providing insights for sustainable land and water resource management.'
+  },
+  {
+    id: '10',
+    title: 'Web-based Decision Support Systems for Integrated Water Resources Management',
+    journal: 'Environmental Modelling & Software',
+    year: '2023',
+    status: 'published',
+    tags: ['Decision Support Systems', 'Web-based Tools', 'Water Resources Management', 'Software Development'],
+    abstract: 'Development and implementation of web-based decision support systems for integrated water resources management, enhancing stakeholder engagement and data-driven decision making.'
   }
 ];
 
@@ -99,7 +135,7 @@ const PublicationsSection = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">Publications & Research</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Peer-reviewed publications and ongoing research in remote sensing, water resources, and climate change adaptation
+            Explore my academic and professional journey.
           </p>
         </div>
 

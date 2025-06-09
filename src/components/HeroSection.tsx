@@ -23,13 +23,12 @@ const HeroSection = () => {
           <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl bg-gradient-to-br from-blue-500 to-green-500 p-1">
             <div className="w-full h-full rounded-full overflow-hidden bg-background">
               <img 
-                src="/lovable-uploads/9127bafb-69a3-431c-8fc2-5b9fc1ed255f.png" 
+                src="/lovable-uploads/133250f4-a020-4733-8d3c-5ce26f9b577d.png" 
                 alt="Julius I. Jimenez" 
-                className="w-full h-full object-cover object-center scale-150"
+                className="w-full h-full object-cover object-center"
                 style={{
                   filter: 'contrast(1.1) brightness(1.05)',
-                  objectPosition: 'center 15%',
-                  transform: 'scale(1.8) translateY(-10px)'
+                  objectPosition: 'center top'
                 }}
               />
             </div>
@@ -48,7 +47,7 @@ const HeroSection = () => {
             innovative geospatial technologies and climate change adaptation research
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
               <Download className="mr-2" size={20} />
               Download CV
@@ -57,6 +56,38 @@ const HeroSection = () => {
               <Mail className="mr-2" size={20} />
               Get in Touch
             </Button>
+          </div>
+
+          {/* Social Media Links */}
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <a 
+              href="https://www.researchgate.net/profile/Julius-Jimenez?ev=hdr_xprf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline"
+            >
+              ResearchGate
+            </a>
+            <span className="text-muted-foreground">•</span>
+            <a 
+              href="https://scholar.google.co.uk/citations?user=AE2wetMAAAAJ&hl=en&oi=ao" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline"
+            >
+              Google Scholar
+            </a>
+            <span className="text-muted-foreground">•</span>
+            <a 
+              href="https://orcid.org/0009-0001-4036-8024" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 underline"
+            >
+              ORCID
+            </a>
+            <span className="text-muted-foreground">•</span>
+            <span className="text-muted-foreground">Web of Science: MSX-9873-2025</span>
           </div>
         </div>
       </div>
