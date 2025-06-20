@@ -89,6 +89,57 @@ const cvData: CVEntry[] = [
     description: 'Teaching and research in agricultural engineering and sustainable development',
     tags: ['Teaching', 'Agricultural Engineering', 'Sustainable Development']
   },
+  // New Work Experience Entries
+  {
+    id: '51',
+    type: 'work',
+    title: 'Science Aide 1',
+    institution: 'Mariano Marcos State University, MMSU-SSIP Project',
+    location: 'Philippines',
+    year: '2017',
+    description: 'Science aide for MMSU-SSIP Project (01 July 2017 to 08 August 2017)',
+    tags: ['Science Support', 'Research Project', 'University']
+  },
+  {
+    id: '52',
+    type: 'work',
+    title: 'Mapping Aide 1',
+    institution: 'Mariano Marcos State University, MMSU-Lidar 2 Project',
+    location: 'Philippines',
+    year: '2016-2017',
+    description: 'Mapping aide for MMSU-Lidar 2 Project (03 October 2016 to 30 June 2017)',
+    tags: ['Mapping', 'LiDAR', 'Geospatial Technology', 'Research Project']
+  },
+  {
+    id: '53',
+    type: 'work',
+    title: 'SPES-Utility Worker 1',
+    institution: 'Mariano Marcos State University, Information Technology Center',
+    location: 'Philippines',
+    year: '2014',
+    description: 'SPES utility worker at Information Technology Center (21 April 2014 to 02 June 2014)',
+    tags: ['IT Support', 'University', 'SPES Program']
+  },
+  {
+    id: '54',
+    type: 'work',
+    title: 'SPES-Utility Worker 1',
+    institution: 'Mariano Marcos State University, Bids and Awards Committee',
+    location: 'Philippines',
+    year: '2013',
+    description: 'SPES utility worker at Bids and Awards Committee (10 April 2013 to 08 May 2013)',
+    tags: ['Administrative Support', 'University', 'SPES Program']
+  },
+  {
+    id: '55',
+    type: 'work',
+    title: 'SPES-Utility Worker 1',
+    institution: 'Mariano Marcos State University, Crop Research Laboratory',
+    location: 'Philippines',
+    year: '2012',
+    description: 'SPES utility worker at Crop Research Laboratory (11 April 2012 to 09 June 2012)',
+    tags: ['Research Support', 'Laboratory', 'University', 'SPES Program']
+  },
   // Publications - Updated with correct list without duplications
   {
     id: '8',

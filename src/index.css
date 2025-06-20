@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -99,5 +100,12 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Contact button visibility enhancement */
+@layer components {
+  .contact-button {
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-lg transition-all duration-200 hover:shadow-xl;
   }
 }

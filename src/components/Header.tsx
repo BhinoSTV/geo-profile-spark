@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Home, User, FileText, Award, Mail } from 'lucide-react';
+import { Home, User, FileText, Award, Mail, FlaskConical } from 'lucide-react';
 
 const Header = () => {
   const scrollToSection = (sectionId: string) => {
@@ -38,6 +38,13 @@ const Header = () => {
             >
               <FileText size={18} />
               <span>CV</span>
+            </button>
+            <button 
+              onClick={() => scrollToSection('research-lab')}
+              className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors"
+            >
+              <FlaskConical size={18} />
+              <span>Research Laboratory</span>
             </button>
             <button 
               onClick={() => scrollToSection('awards')}
