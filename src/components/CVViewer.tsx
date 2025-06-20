@@ -1,5 +1,3 @@
-
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -158,7 +156,7 @@ const cvData: CVEntry[] = [
     tags: ['Supplementary Information', 'Technical Procedures', 'CHIRPS', 'Bias Correction', 'Quartile Mapping'],
     link: 'http://dx.doi.org/10.13140/RG.2.2.28749.14560'
   },
-  // Training - Complete list
+  // Training/Workshops - Updated with complete list and roles
   {
     id: '14',
     type: 'training',
@@ -167,7 +165,7 @@ const cvData: CVEntry[] = [
     location: 'Bangkok, Thailand',
     year: '2024',
     description: 'Training on climate and disaster risk resilience for cities in Asia and the Pacific region',
-    tags: ['Climate Resilience', 'Disaster Risk', 'Urban Planning', 'Adaptation']
+    tags: ['Climate Resilience', 'Disaster Risk', 'Urban Planning', 'Adaptation', 'Trainee']
   },
   {
     id: '15',
@@ -176,8 +174,8 @@ const cvData: CVEntry[] = [
     institution: 'Drone Entry Co. – Asian Institute of Technology',
     location: 'Thailand',
     year: '2024',
-    description: 'International Research Internship on AI for Civil Engineering and Drone Technologies - Resource Person',
-    tags: ['Geospatial Technologies', 'Flood Mapping', 'AI', 'Drone Technologies']
+    description: 'International Research Internship on AI for Civil Engineering and Drone Technologies',
+    tags: ['Geospatial Technologies', 'Flood Mapping', 'AI', 'Drone Technologies', 'Resource Person']
   },
   {
     id: '16',
@@ -187,7 +185,7 @@ const cvData: CVEntry[] = [
     location: 'City of Batac, Ilocos Norte, Philippines',
     year: '2023',
     description: 'Resource Person/Trainer for workshop on applying geospatial data for governance towards sustainable development',
-    tags: ['Geospatial Data', 'Governance', 'Sustainable Development', 'Training']
+    tags: ['Geospatial Data', 'Governance', 'Sustainable Development', 'Resource Person', 'Trainer']
   },
   {
     id: '17',
@@ -197,7 +195,7 @@ const cvData: CVEntry[] = [
     location: 'Bangkok, Thailand',
     year: '2023',
     description: 'Resource Person, Organizer and Trainer - lecture during Regional Training Workshop on Climate Adaptation Tools',
-    tags: ['Adaptation Planning', 'Climate Tools', 'Data Analysis', 'Information Systems']
+    tags: ['Adaptation Planning', 'Climate Tools', 'Data Analysis', 'Information Systems', 'Resource Person', 'Organizer', 'Trainer']
   },
   {
     id: '18',
@@ -207,7 +205,7 @@ const cvData: CVEntry[] = [
     location: 'Bangkok, Thailand',
     year: '2023',
     description: 'Resource Person - lecture in Regional Training Workshop on Building Cities Resilience to Climate and Disaster Risks',
-    tags: ['FloodS Tool', 'Adaptation Planning', 'Climate Resilience', 'Disaster Risk']
+    tags: ['FloodS Tool', 'Adaptation Planning', 'Climate Resilience', 'Disaster Risk', 'Resource Person']
   },
   {
     id: '19',
@@ -216,8 +214,8 @@ const cvData: CVEntry[] = [
     institution: 'Regional Resource Centre for Asia and Pacific, Asian Institute of Technology, Thailand & Ministry of Environment, Japan',
     location: 'Bangkok, Thailand',
     year: '2023',
-    description: 'Trainee/Participant in regional training workshop',
-    tags: ['Climate Resilience', 'Disaster Risk', 'Urban Planning', 'Regional Development']
+    description: 'Regional training workshop on building resilience to climate and disaster risks',
+    tags: ['Climate Resilience', 'Disaster Risk', 'Urban Planning', 'Regional Development', 'Trainee', 'Participant']
   },
   {
     id: '20',
@@ -226,8 +224,8 @@ const cvData: CVEntry[] = [
     institution: 'Department of Water Resources Development and management, Indian Institute of Technology and Indian Space Research Organisation-ISRO-RESPOND Programme',
     location: 'India',
     year: '2023',
-    description: 'Participant in water resources assessment training under climate uncertainties',
-    tags: ['Water Resources', 'Climate Assessment', 'ISRO', 'Uncertainty Analysis']
+    description: 'Training on water resources assessment under climate uncertainties',
+    tags: ['Water Resources', 'Climate Assessment', 'ISRO', 'Uncertainty Analysis', 'Participant']
   },
   {
     id: '21',
@@ -236,8 +234,8 @@ const cvData: CVEntry[] = [
     institution: 'Asian Institute of Technology and Asia-Pacific Network for Global Change Research',
     location: 'Pathum Thani, Thailand',
     year: '2023',
-    description: 'Participant - Thematic Regional Workshop on Integration of Earth Observation, Geospatial and Conventional Technologies for Water Quality and Quantity Monitoring',
-    tags: ['Climate Change', 'Lakes Assessment', 'Earth Observation', 'Water Quality']
+    description: 'Thematic Regional Workshop on Integration of Earth Observation, Geospatial and Conventional Technologies for Water Quality and Quantity Monitoring',
+    tags: ['Climate Change', 'Lakes Assessment', 'Earth Observation', 'Water Quality', 'Participant']
   },
   {
     id: '22',
@@ -246,8 +244,8 @@ const cvData: CVEntry[] = [
     institution: 'National Irrigation Administration – Region 1',
     location: 'Laoag City, Ilocos Norte',
     year: '2022',
-    description: 'Resource Speaker/Trainer for regional training on watershed vulnerability assessment',
-    tags: ['Vulnerability Assessment', 'Socio-Economic', 'Watershed Management', 'Regional Training']
+    description: 'Regional training on watershed vulnerability assessment and socio-economic components',
+    tags: ['Vulnerability Assessment', 'Socio-Economic', 'Watershed Management', 'Regional Training', 'Resource Speaker', 'Trainer']
   },
   {
     id: '23',
@@ -256,8 +254,8 @@ const cvData: CVEntry[] = [
     institution: 'National Irrigation Administration – Region 1',
     location: 'Philippines',
     year: '2021',
-    description: 'Resource Speaker/Trainer for regional training on watershed management planning',
-    tags: ['Watershed Management', 'Irrigation Planning', 'Small Reservoir', 'Regional Training']
+    description: 'Regional training on watershed management planning for irrigation projects',
+    tags: ['Watershed Management', 'Irrigation Planning', 'Small Reservoir', 'Regional Training', 'Resource Speaker', 'Trainer']
   },
   {
     id: '24',
@@ -266,8 +264,8 @@ const cvData: CVEntry[] = [
     institution: 'Mariano Marcos State University',
     location: 'City of Batac, Ilocos Norte',
     year: '2019',
-    description: 'Trainee in basic GIS and remote sensing applications',
-    tags: ['GIS', 'Remote Sensing', 'Basic Training', 'Geospatial Technology']
+    description: 'Basic training course in GIS and remote sensing applications',
+    tags: ['GIS', 'Remote Sensing', 'Basic Training', 'Geospatial Technology', 'Trainee']
   },
   {
     id: '25',
@@ -277,7 +275,7 @@ const cvData: CVEntry[] = [
     location: 'Philippines',
     year: '2019',
     description: 'National training for State, Colleges, Universities and LGUs on crop damage assessment',
-    tags: ['Crop Damage Assessment', 'REDAS', 'PHILVOLCS', 'Disaster Assessment']
+    tags: ['Crop Damage Assessment', 'REDAS', 'PHILVOLCS', 'Disaster Assessment', 'Trainee']
   },
   {
     id: '26',
@@ -287,7 +285,7 @@ const cvData: CVEntry[] = [
     location: 'Philippines',
     year: '2018',
     description: 'National training and updating seminar on technical rules and coaching',
-    tags: ['Sports Training', 'Technical Rules', 'Coaching', 'National Level']
+    tags: ['Sports Training', 'Technical Rules', 'Coaching', 'National Level', 'Trainee']
   },
   {
     id: '27',
@@ -296,18 +294,18 @@ const cvData: CVEntry[] = [
     institution: 'Phil-LiDAR 2 Project Mariano Marcos State University',
     location: 'Philippines',
     year: '2017',
-    description: 'Participant in national resource mapping forum (January 26-27, 2017)',
-    tags: ['Resource Mapping', 'Phil-LiDAR', 'National Project', 'Mapping Technology']
+    description: 'National resource mapping forum (January 26-27, 2017)',
+    tags: ['Resource Mapping', 'Phil-LiDAR', 'National Project', 'Mapping Technology', 'Participant']
   },
   {
     id: '28',
     type: 'training',
-    title: 'Resource Mapping Forum and Maps Turnover Ceremony',
+    title: 'Resource Mapping Forum and Maps Turnover Ceremony (June)',
     institution: 'Phil-LiDAR 2 Project Mariano Marcos State University',
     location: 'Philippines',
     year: '2017',
-    description: 'Participant in national resource mapping forum (June 28-29, 2017)',
-    tags: ['Resource Mapping', 'Phil-LiDAR', 'National Project', 'Mapping Technology']
+    description: 'National resource mapping forum (June 28-29, 2017)',
+    tags: ['Resource Mapping', 'Phil-LiDAR', 'National Project', 'Mapping Technology', 'Participant']
   },
   {
     id: '29',
@@ -317,9 +315,9 @@ const cvData: CVEntry[] = [
     location: 'San Nicolas, Ilocos Norte',
     year: '2015',
     description: 'On-the-job training at National Irrigation Administration (April-May 2015)',
-    tags: ['On-the-Job Training', 'Irrigation Administration', 'Practical Training', 'Field Experience']
+    tags: ['On-the-Job Training', 'Irrigation Administration', 'Practical Training', 'Field Experience', 'Trainee']
   },
-  // Seminars/Conferences
+  // Seminars/Conferences - Updated with complete list and roles
   {
     id: '30',
     type: 'seminar',
@@ -327,8 +325,8 @@ const cvData: CVEntry[] = [
     institution: 'Network for Education and Research on Peace and Sustainability (NERPS) at Hiroshima University and Asia Institute of Technology',
     location: 'Pathum Thani, Thailand',
     year: '2023',
-    description: 'Paper Presenter/Participant at international conference on peace and sustainability',
-    tags: ['Peace Studies', 'Sustainability', 'International Conference', 'Paper Presentation']
+    description: 'International conference on peace and sustainability (February 28 – March 3, 2023)',
+    tags: ['Peace Studies', 'Sustainability', 'International Conference', 'Paper Presenter', 'Participant']
   },
   {
     id: '31',
@@ -337,8 +335,8 @@ const cvData: CVEntry[] = [
     institution: 'KL Deemed to be University',
     location: 'India',
     year: '2023',
-    description: 'Guest Lecturer on geospatial applications in water resources management',
-    tags: ['Guest Lecture', 'Geospatial Applications', 'Water Resources', 'International']
+    description: 'Guest lecture on geospatial applications in water resources management (January 9, 2023)',
+    tags: ['Guest Lecture', 'Geospatial Applications', 'Water Resources', 'International', 'Guest Lecturer']
   },
   {
     id: '32',
@@ -347,8 +345,8 @@ const cvData: CVEntry[] = [
     institution: 'Asian Institute of Technology',
     location: 'Bangkok, Thailand',
     year: '2022',
-    description: 'Facilitator - Special Degree Program international short course',
-    tags: ['Education Innovation', 'International Course', 'Facilitator', 'Special Program']
+    description: 'Special Degree Program international short course (December 16-29, 2022)',
+    tags: ['Education Innovation', 'International Course', 'Special Program', 'Facilitator']
   },
   {
     id: '33',
@@ -357,7 +355,7 @@ const cvData: CVEntry[] = [
     institution: 'Asian Institute of Technology',
     location: 'Bangkok, Thailand',
     year: '2022',
-    description: 'Participant in international conference on water security and climate change',
+    description: 'International conference on water security and climate change (December 1-3, 2022)',
     tags: ['Water Security', 'Climate Change', 'International Conference', 'Participant']
   },
   {
@@ -367,8 +365,8 @@ const cvData: CVEntry[] = [
     institution: 'Shizuoka University',
     location: 'Shizuoka, Japan',
     year: '2019',
-    description: 'Presenter at inter-academic conference in Asia',
-    tags: ['Inter-Academia', 'International Presenter', 'Academic Conference', 'Japan']
+    description: 'Inter-academic conference in Asia (December 2-4, 2019)',
+    tags: ['Inter-Academia', 'International', 'Academic Conference', 'Japan', 'Presenter']
   },
   {
     id: '35',
@@ -377,8 +375,8 @@ const cvData: CVEntry[] = [
     institution: 'Asian Institute of Technology',
     location: 'Thailand',
     year: '2019',
-    description: 'Resource Speaker - EduCamp – Inspire-Ignite-Innovate Special Degree Program international lecture',
-    tags: ['Resource Speaker', 'Water Resources', 'Geospatial Applications', 'International Lecture']
+    description: 'EduCamp – Inspire-Ignite-Innovate Special Degree Program international lecture (December 16-29, 2019)',
+    tags: ['Water Resources', 'Geospatial Applications', 'International Lecture', 'Resource Speaker']
   },
   {
     id: '36',
@@ -387,8 +385,8 @@ const cvData: CVEntry[] = [
     institution: 'Philippine Society of Agricultural and Biosystem Engineers',
     location: 'Philippines',
     year: '2019',
-    description: 'International Presenter - 30th Philippine Agriculture Engineering Week, 69th PSABE Annual National Convention',
-    tags: ['Agricultural Engineering', 'International Conference', 'Presenter', 'PSABE']
+    description: '30th Philippine Agriculture Engineering Week, 69th PSABE Annual National Convention (April 21-27, 2019)',
+    tags: ['Agricultural Engineering', 'International Conference', 'PSABE', 'Presenter']
   },
   {
     id: '37',
@@ -397,8 +395,8 @@ const cvData: CVEntry[] = [
     institution: 'Mariano Marcos State University',
     location: 'City of Batac, Ilocos Norte',
     year: '2019',
-    description: 'Guest Speaker - Culminating Activity at Crop Research Laboratory',
-    tags: ['Guest Speaker', 'Agricultural Engineering', 'Career Development', 'University Event']
+    description: 'Culminating Activity at Crop Research Laboratory (May 7, 2019)',
+    tags: ['Agricultural Engineering', 'Career Development', 'University Event', 'Guest Speaker']
   },
   {
     id: '38',
@@ -407,8 +405,8 @@ const cvData: CVEntry[] = [
     institution: 'MMSU Hostel',
     location: 'City of Batac, Ilocos Norte',
     year: '2019',
-    description: 'Participant in capability building program for university personnel',
-    tags: ['Capability Building', 'DOST Program', 'Balik Scientist', 'University Development']
+    description: 'Capability building program for university personnel (February 6-8, 2019)',
+    tags: ['Capability Building', 'DOST Program', 'Balik Scientist', 'University Development', 'Participant']
   },
   {
     id: '39',
@@ -417,8 +415,8 @@ const cvData: CVEntry[] = [
     institution: 'Mariano Marcos State University',
     location: 'Philippines',
     year: '2019',
-    description: 'Participant in seminar on innovative agricultural waste management systems',
-    tags: ['Environmental Management', 'Agricultural Innovation', 'Waste Management', 'Emissions Control']
+    description: 'Seminar on innovative agricultural waste management systems (January 14, 2019)',
+    tags: ['Environmental Management', 'Agricultural Innovation', 'Waste Management', 'Emissions Control', 'Participant']
   },
   {
     id: '40',
@@ -427,8 +425,8 @@ const cvData: CVEntry[] = [
     institution: 'Isabela State University City Government of Ilogan Isabela Department of Agriculture',
     location: 'Isabela, Philippines',
     year: '2018',
-    description: 'National participant in scientific forum on corn production and utilization',
-    tags: ['Corn Production', 'Agricultural Science', 'National Forum', 'Crop Utilization']
+    description: 'National scientific forum on corn production and utilization (May 4-5, 2018)',
+    tags: ['Corn Production', 'Agricultural Science', 'National Forum', 'Crop Utilization', 'Participant']
   },
   {
     id: '41',
@@ -437,8 +435,8 @@ const cvData: CVEntry[] = [
     institution: 'Schools Division of Ilocos Norte Conference Hall',
     location: 'Laoag City, Philippines',
     year: '2018',
-    description: 'Participant in local stakeholders convergence meeting',
-    tags: ['Stakeholder Engagement', 'Local Development', 'Convergence Meeting', 'Community Planning']
+    description: 'Local stakeholders convergence meeting (November 23, 2018)',
+    tags: ['Stakeholder Engagement', 'Local Development', 'Convergence Meeting', 'Community Planning', 'Participant']
   },
   {
     id: '42',
@@ -447,8 +445,8 @@ const cvData: CVEntry[] = [
     institution: 'Mariano Marcos State University',
     location: 'City of Batac, Ilocos Norte',
     year: '2017',
-    description: 'Participant in meteorological orientation program covering climate and weather systems',
-    tags: ['Meteorology', 'Climate Science', 'PAGASA', 'Weather Systems']
+    description: 'Meteorological orientation program covering climate and weather systems (October 17, 2017)',
+    tags: ['Meteorology', 'Climate Science', 'PAGASA', 'Weather Systems', 'Participant']
   },
   {
     id: '43',
@@ -457,8 +455,8 @@ const cvData: CVEntry[] = [
     institution: 'MMSU Teatro Ilocandia',
     location: 'City of Batac, Province of Ilocos Norte',
     year: '2017',
-    description: 'Participant in international agricultural sciences congress and general meeting',
-    tags: ['Agricultural Sciences', 'International Congress', 'ISSAAS', 'Southeast Asia']
+    description: 'International agricultural sciences congress and general meeting (September 21-23, 2017)',
+    tags: ['Agricultural Sciences', 'International Congress', 'ISSAAS', 'Southeast Asia', 'Participant']
   },
   {
     id: '44',
@@ -467,8 +465,8 @@ const cvData: CVEntry[] = [
     institution: 'Philippine Society of Agricultural Engineering',
     location: 'MMSU, City of Batac, Ilocos Norte',
     year: '2015',
-    description: 'Participant - 66th Philippine Society of Agricultural Engineering Annual National Convention, 27th Philippine Agricultural Engineering Week',
-    tags: ['Agricultural Engineering', 'International Conference', 'National Convention', 'Engineering Week']
+    description: '66th Philippine Society of Agricultural Engineering Annual National Convention, 27th Philippine Agricultural Engineering Week (April 24-30, 2015)',
+    tags: ['Agricultural Engineering', 'International Conference', 'National Convention', 'Engineering Week', 'Participant']
   },
   {
     id: '45',
@@ -477,8 +475,8 @@ const cvData: CVEntry[] = [
     institution: 'AVR MMSU-COE',
     location: 'Philippines',
     year: '2015',
-    description: 'Participant in updates on agricultural engineering topics',
-    tags: ['Irrigation', 'Drainage', 'Soil Conservation', 'Postharvest Technology']
+    description: 'Updates on agricultural engineering topics (April 18, 2015)',
+    tags: ['Irrigation', 'Drainage', 'Soil Conservation', 'Postharvest Technology', 'Participant']
   },
   {
     id: '46',
@@ -487,8 +485,8 @@ const cvData: CVEntry[] = [
     institution: 'Cavite State University',
     location: 'Philippines',
     year: '2014',
-    description: 'Participant in national convention on ASEAN agricultural and biosystems engineering program',
-    tags: ['ASEAN Program', 'Agricultural Engineering', 'Biosystems Engineering', 'National Convention']
+    description: 'National convention on ASEAN agricultural and biosystems engineering program (December 16-18, 2014)',
+    tags: ['ASEAN Program', 'Agricultural Engineering', 'Biosystems Engineering', 'National Convention', 'Participant']
   },
   // Awards
   {
@@ -572,6 +570,12 @@ const CVViewer = () => {
     return colors[type as keyof typeof colors] || 'bg-gray-100 text-gray-800';
   };
 
+  const getRoleHighlight = (tags: string[]) => {
+    const roles = ['Resource Person', 'Trainer', 'Facilitator', 'Guest Speaker', 'Guest Lecturer', 'Presenter', 'Paper Presenter', 'Participant', 'Trainee', 'Organizer'];
+    const foundRoles = tags.filter(tag => roles.includes(tag));
+    return foundRoles;
+  };
+
   return (
     <section id="cv" className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
@@ -615,54 +619,69 @@ const CVViewer = () => {
 
         {/* CV Entries */}
         <div className="grid gap-6 max-w-4xl mx-auto">
-          {filteredData.map(entry => (
-            <Card key={entry.id} className="hover:shadow-lg transition-shadow duration-200 border-l-4 border-l-blue-500">
-              <CardHeader>
-                <div className="flex justify-between items-start gap-4">
-                  <div className="flex-1">
-                    <CardTitle className="text-xl mb-2 flex items-center gap-2">
-                      {entry.title}
-                      {entry.link && (
-                        <a 
-                          href={entry.link} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="text-blue-600 hover:text-blue-800"
-                        >
-                          <ExternalLink size={18} />
-                        </a>
+          {filteredData.map(entry => {
+            const roleHighlights = getRoleHighlight(entry.tags || []);
+            const otherTags = (entry.tags || []).filter(tag => !roleHighlights.includes(tag));
+            
+            return (
+              <Card key={entry.id} className="hover:shadow-lg transition-shadow duration-200 border-l-4 border-l-blue-500">
+                <CardHeader>
+                  <div className="flex justify-between items-start gap-4">
+                    <div className="flex-1">
+                      <CardTitle className="text-xl mb-2 flex items-center gap-2">
+                        {entry.title}
+                        {entry.link && (
+                          <a 
+                            href={entry.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-blue-600 hover:text-blue-800"
+                          >
+                            <ExternalLink size={18} />
+                          </a>
+                        )}
+                      </CardTitle>
+                      <div className="space-y-1 text-muted-foreground">
+                        <div className="flex items-center gap-2">
+                          <MapPin size={16} />
+                          <span>{entry.institution}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <Calendar size={16} />
+                          <span>{entry.year}</span>
+                        </div>
+                      </div>
+                      {/* Role Highlights */}
+                      {roleHighlights.length > 0 && (
+                        <div className="flex flex-wrap gap-2 mt-3">
+                          {roleHighlights.map(role => (
+                            <Badge key={role} className="bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold shadow-md">
+                              {role}
+                            </Badge>
+                          ))}
+                        </div>
                       )}
-                    </CardTitle>
-                    <div className="space-y-1 text-muted-foreground">
-                      <div className="flex items-center gap-2">
-                        <MapPin size={16} />
-                        <span>{entry.institution}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <Calendar size={16} />
-                        <span>{entry.year}</span>
-                      </div>
                     </div>
+                    <Badge className={getTypeColor(entry.type)}>
+                      {entry.type.charAt(0).toUpperCase() + entry.type.slice(1)}
+                    </Badge>
                   </div>
-                  <Badge className={getTypeColor(entry.type)}>
-                    {entry.type.charAt(0).toUpperCase() + entry.type.slice(1)}
-                  </Badge>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4">{entry.description}</p>
-                {entry.tags && (
-                  <div className="flex flex-wrap gap-2">
-                    {entry.tags.map(tag => (
-                      <Badge key={tag} variant="secondary" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          ))}
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">{entry.description}</p>
+                  {otherTags.length > 0 && (
+                    <div className="flex flex-wrap gap-2">
+                      {otherTags.map(tag => (
+                        <Badge key={tag} variant="secondary" className="text-xs">
+                          {tag}
+                        </Badge>
+                      ))}
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            );
+          })}
         </div>
 
         {filteredData.length === 0 && (
@@ -676,4 +695,3 @@ const CVViewer = () => {
 };
 
 export default CVViewer;
-
