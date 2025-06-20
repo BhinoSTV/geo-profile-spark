@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -90,42 +89,76 @@ const cvData: CVEntry[] = [
     description: 'Teaching and research in agricultural engineering and sustainable development',
     tags: ['Teaching', 'Agricultural Engineering', 'Sustainable Development']
   },
-  // Publications
+  // Publications - Updated with your actual publications
   {
     id: '8',
     type: 'publication',
-    title: 'Assessment of the spatiotemporal dynamics of river discharge and groundwater recharge',
+    title: 'Assessment of the spatiotemporal dynamics of river discharge and groundwater recharge to support sustainable water management for irrigated agriculture in the Padsan River watershed',
     institution: 'Earth Science Informatics',
     location: 'International',
     year: '2025',
-    description: 'Assessment of the spatiotemporal dynamics of river discharge and groundwater recharge to support sustainable water management for irrigated agriculture in the Padsan River watershed',
-    tags: ['Groundwater', 'River Discharge', 'Sustainable Agriculture', 'Water Management'],
+    description: 'Earth Sci Inform 18, 203 (2025). Assessment of spatiotemporal dynamics using advanced remote sensing and hydrological modeling techniques.',
+    tags: ['Groundwater Recharge', 'River Discharge', 'Sustainable Agriculture', 'Water Management', 'Remote Sensing'],
     link: 'https://doi.org/10.1007/s12145-025-01707-1'
   },
   {
     id: '9',
     type: 'publication',
-    title: 'Quantifying Impacts of Climate and Land Use Change on Groundwater Hydrology',
+    title: 'Quantifying Impacts of Climate and Land Use Change on Groundwater Hydrology and Sustainability of the Quiaoit River Watershed',
     institution: 'Advances in Social Science, Education and Humanities Research',
     location: 'International',
     year: '2022',
-    description: 'Quantifying Impacts of Climate and Land Use Change on Groundwater Hydrology and Sustainability of the Quiaoit River Watershed',
-    tags: ['Climate Change', 'Land Use Change', 'Groundwater Hydrology', 'Watershed Management'],
+    description: 'Advances in Social Science, Education and Humanities Research, 60. Quantifying impacts using integrated modeling approaches and scenario analysis.',
+    tags: ['Climate Change', 'Land Use Change', 'Groundwater Hydrology', 'Watershed Sustainability'],
     link: 'https://doi.org/10.2991/assehr.k.220103.018'
   },
   {
     id: '10',
     type: 'publication',
-    title: 'Flood Risk Assessment as Affected by Land Use Change for Policy Intervention',
+    title: 'Quantified Impact of Projected Climate Change on Groundwater Recharge and River Discharge Leveraging the Use of Open Access Geospatial Data',
+    institution: 'Research Square',
+    location: 'International',
+    year: '2025',
+    description: 'PREPRINT (Version 1) available at Research Square. Quantifying projected impacts using open access geospatial data and climate models.',
+    tags: ['Climate Change', 'Groundwater Recharge', 'River Discharge', 'Geospatial Data', 'Open Access'],
+    link: 'https://doi.org/10.21203/rs.3.rs-6333077/v1'
+  },
+  {
+    id: '11',
+    type: 'publication',
+    title: 'Flood Risk Assessment as Affected by Land Use Change for Policy Intervention: a case study of Quiaoit River Watershed',
     institution: 'Philippine Agricultural and Biosystems Engineering Journal',
     location: 'Philippines',
     year: '2022',
-    description: 'A case study of Quiaoit River Watershed examining flood risk assessment and policy interventions',
-    tags: ['Flood Risk', 'Land Use Change', 'Policy Intervention', 'Watershed Management']
+    description: 'Philippine Agricultural and Biosystems Engineering Journal, 3(1). ISSN: 2619-6913. pp. 28-43. Assessment of flood risk patterns for policy interventions.',
+    tags: ['Flood Risk Assessment', 'Land Use Change', 'Policy Intervention', 'Watershed Management'],
+    link: 'https://www.researchgate.net/publication/363212549_FLOOD_RISK_ASSESSMENT_AS_AFFECTED_BY_LAND_USE_CHANGE_FOR_POLICY_Philippine_Agricultural_and_Biosystems_Engineering_Journal'
+  },
+  {
+    id: '12',
+    type: 'publication',
+    title: 'Quantifying the Impact of Land Use Change as Affected by Groundwater Hydrology Using SWAT-MODFLOW Modeling',
+    institution: 'Philippine Agricultural and Biosystems Engineering Journal',
+    location: 'Philippines',
+    year: '2022',
+    description: 'Philippine Agricultural and Biosystems Engineering Journal, 3(1). ISSN: 2619-6913. pp. 16-27. Integration of SWAT and MODFLOW models.',
+    tags: ['Land Use Change', 'Groundwater Hydrology', 'SWAT-MODFLOW', 'Hydrological Modeling'],
+    link: 'https://www.researchgate.net/publication/363212286_Quantifying_the_Impact_of_Land_Use_Change_as_Affected_by_Groundwater_Hydrology_Using_SWAT-_MODFLOW_Modeling_Philippine_Agricultural_and_Biosystems_Engineering_Journal'
+  },
+  {
+    id: '13',
+    type: 'publication',
+    title: 'SUPPLEMENTARY INFORMATION: Detailed and Technical Procedures for Quartile Mapping as Bias Correction for CHIRPS',
+    institution: 'Earth Science Informatics',
+    location: 'International',
+    year: '2025',
+    description: 'Earth Sci Inform 18, 203 (2025). Detailed technical procedures and supplementary information for quartile mapping as bias correction.',
+    tags: ['Supplementary Information', 'Technical Procedures', 'CHIRPS', 'Bias Correction', 'Quartile Mapping'],
+    link: 'http://dx.doi.org/10.13140/RG.2.2.28749.14560'
   },
   // Training (selected major ones)
   {
-    id: '11',
+    id: '14',
     type: 'training',
     title: 'Regional Training Workshop on Enhancing Climate and Disaster Risk Resilient Cities',
     institution: 'Regional Resource Centre for Asia and the Pacific – Asian Institute of Technology',
@@ -135,7 +168,7 @@ const cvData: CVEntry[] = [
     tags: ['Climate Resilience', 'Disaster Risk', 'Urban Planning', 'Adaptation']
   },
   {
-    id: '12',
+    id: '15',
     type: 'training',
     title: 'International Training Workshop on Applying Geospatial Data for Governance',
     institution: 'Mariano Marcos State University, Philippines, and Asian Institute of Technology, Thailand',
@@ -184,7 +217,7 @@ const CVViewer = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-foreground">Curriculum Vitae</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Explore my academic and professional journey through interactive filters
+            Explore my academic and professional journey.
           </p>
         </div>
 
