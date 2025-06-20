@@ -1,4 +1,5 @@
 
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -7,7 +8,7 @@ import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 
 interface CVEntry {
   id: string;
-  type: 'education' | 'work' | 'training' | 'publication' | 'award';
+  type: 'education' | 'work' | 'training' | 'publication' | 'award' | 'seminar';
   title: string;
   institution: string;
   location: string;
@@ -157,7 +158,7 @@ const cvData: CVEntry[] = [
     tags: ['Supplementary Information', 'Technical Procedures', 'CHIRPS', 'Bias Correction', 'Quartile Mapping'],
     link: 'http://dx.doi.org/10.13140/RG.2.2.28749.14560'
   },
-  // Training - No duplications, focused list
+  // Training - Complete list
   {
     id: '14',
     type: 'training',
@@ -171,6 +172,16 @@ const cvData: CVEntry[] = [
   {
     id: '15',
     type: 'training',
+    title: 'Geospatial Technologies for Urban and Flood Mapping lecture seminar-workshop',
+    institution: 'Drone Entry Co. – Asian Institute of Technology',
+    location: 'Thailand',
+    year: '2024',
+    description: 'International Research Internship on AI for Civil Engineering and Drone Technologies - Resource Person',
+    tags: ['Geospatial Technologies', 'Flood Mapping', 'AI', 'Drone Technologies']
+  },
+  {
+    id: '16',
+    type: 'training',
     title: 'International Training Workshop on Applying Geospatial Data for Governance',
     institution: 'Mariano Marcos State University, Philippines, and Asian Institute of Technology, Thailand',
     location: 'City of Batac, Ilocos Norte, Philippines',
@@ -178,9 +189,310 @@ const cvData: CVEntry[] = [
     description: 'Resource Person/Trainer for workshop on applying geospatial data for governance towards sustainable development',
     tags: ['Geospatial Data', 'Governance', 'Sustainable Development', 'Training']
   },
-  // Awards - No duplications, focused list
   {
-    id: '16',
+    id: '17',
+    type: 'training',
+    title: 'Bridging the Gap between Data and Information for Adaptation Planning',
+    institution: 'Regional Resource Centre for Asia and Pacific, Asian Institute of Technology, Thailand & Ministry of Environment, Japan',
+    location: 'Bangkok, Thailand',
+    year: '2023',
+    description: 'Resource Person, Organizer and Trainer - lecture during Regional Training Workshop on Climate Adaptation Tools',
+    tags: ['Adaptation Planning', 'Climate Tools', 'Data Analysis', 'Information Systems']
+  },
+  {
+    id: '18',
+    type: 'training',
+    title: 'Introducing FloodS Tool for Adaptation Planning',
+    institution: 'Regional Resource Centre for Asia and Pacific, Asian Institute of Technology, Thailand & Ministry of Environment, Japan',
+    location: 'Bangkok, Thailand',
+    year: '2023',
+    description: 'Resource Person - lecture in Regional Training Workshop on Building Cities Resilience to Climate and Disaster Risks',
+    tags: ['FloodS Tool', 'Adaptation Planning', 'Climate Resilience', 'Disaster Risk']
+  },
+  {
+    id: '19',
+    type: 'training',
+    title: 'Regional Training Workshop on Building Cities Resilience to Climate and Disaster Risks',
+    institution: 'Regional Resource Centre for Asia and Pacific, Asian Institute of Technology, Thailand & Ministry of Environment, Japan',
+    location: 'Bangkok, Thailand',
+    year: '2023',
+    description: 'Trainee/Participant in regional training workshop',
+    tags: ['Climate Resilience', 'Disaster Risk', 'Urban Planning', 'Regional Development']
+  },
+  {
+    id: '20',
+    type: 'training',
+    title: 'Water Resources Assessment Under Climate Uncertainties',
+    institution: 'Department of Water Resources Development and management, Indian Institute of Technology and Indian Space Research Organisation-ISRO-RESPOND Programme',
+    location: 'India',
+    year: '2023',
+    description: 'Participant in water resources assessment training under climate uncertainties',
+    tags: ['Water Resources', 'Climate Assessment', 'ISRO', 'Uncertainty Analysis']
+  },
+  {
+    id: '21',
+    type: 'training',
+    title: 'Climate Change risk Assessment for Southeast Asian Lakes (CCRASEAL)',
+    institution: 'Asian Institute of Technology and Asia-Pacific Network for Global Change Research',
+    location: 'Pathum Thani, Thailand',
+    year: '2023',
+    description: 'Participant - Thematic Regional Workshop on Integration of Earth Observation, Geospatial and Conventional Technologies for Water Quality and Quantity Monitoring',
+    tags: ['Climate Change', 'Lakes Assessment', 'Earth Observation', 'Water Quality']
+  },
+  {
+    id: '22',
+    type: 'training',
+    title: 'Vulnerability Assessment and Socio-Economic Component for Watershed Seminar',
+    institution: 'National Irrigation Administration – Region 1',
+    location: 'Laoag City, Ilocos Norte',
+    year: '2022',
+    description: 'Resource Speaker/Trainer for regional training on watershed vulnerability assessment',
+    tags: ['Vulnerability Assessment', 'Socio-Economic', 'Watershed Management', 'Regional Training']
+  },
+  {
+    id: '23',
+    type: 'training',
+    title: 'Training on the Preparation of Watershed management Plan for Sulvec Small Reservoir Irrigation Project',
+    institution: 'National Irrigation Administration – Region 1',
+    location: 'Philippines',
+    year: '2021',
+    description: 'Resource Speaker/Trainer for regional training on watershed management planning',
+    tags: ['Watershed Management', 'Irrigation Planning', 'Small Reservoir', 'Regional Training']
+  },
+  {
+    id: '24',
+    type: 'training',
+    title: 'Basic GIS and Remote Sensing Training Course',
+    institution: 'Mariano Marcos State University',
+    location: 'City of Batac, Ilocos Norte',
+    year: '2019',
+    description: 'Trainee in basic GIS and remote sensing applications',
+    tags: ['GIS', 'Remote Sensing', 'Basic Training', 'Geospatial Technology']
+  },
+  {
+    id: '25',
+    type: 'training',
+    title: 'REDAS Crop Damage Assessment Training',
+    institution: 'Mariano Marcos State University and The Philippine Institute of Volcanology and Seismology (PHILVOLCS)',
+    location: 'Philippines',
+    year: '2019',
+    description: 'National training for State, Colleges, Universities and LGUs on crop damage assessment',
+    tags: ['Crop Damage Assessment', 'REDAS', 'PHILVOLCS', 'Disaster Assessment']
+  },
+  {
+    id: '26',
+    type: 'training',
+    title: 'National Sepak Takraw and Hoop Technical Rules Training and Coaching',
+    institution: 'Pilipinas Sepak Takraw Association Inc.',
+    location: 'Philippines',
+    year: '2018',
+    description: 'National training and updating seminar on technical rules and coaching',
+    tags: ['Sports Training', 'Technical Rules', 'Coaching', 'National Level']
+  },
+  {
+    id: '27',
+    type: 'training',
+    title: 'Resource Mapping Forum and Maps Turnover Ceremony',
+    institution: 'Phil-LiDAR 2 Project Mariano Marcos State University',
+    location: 'Philippines',
+    year: '2017',
+    description: 'Participant in national resource mapping forum (January 26-27, 2017)',
+    tags: ['Resource Mapping', 'Phil-LiDAR', 'National Project', 'Mapping Technology']
+  },
+  {
+    id: '28',
+    type: 'training',
+    title: 'Resource Mapping Forum and Maps Turnover Ceremony',
+    institution: 'Phil-LiDAR 2 Project Mariano Marcos State University',
+    location: 'Philippines',
+    year: '2017',
+    description: 'Participant in national resource mapping forum (June 28-29, 2017)',
+    tags: ['Resource Mapping', 'Phil-LiDAR', 'National Project', 'Mapping Technology']
+  },
+  {
+    id: '29',
+    type: 'training',
+    title: 'On-the-Job Training',
+    institution: 'National Irrigation Administration',
+    location: 'San Nicolas, Ilocos Norte',
+    year: '2015',
+    description: 'On-the-job training at National Irrigation Administration (April-May 2015)',
+    tags: ['On-the-Job Training', 'Irrigation Administration', 'Practical Training', 'Field Experience']
+  },
+  // Seminars/Conferences
+  {
+    id: '30',
+    type: 'seminar',
+    title: 'NERPS Conference 2023 in Thailand',
+    institution: 'Network for Education and Research on Peace and Sustainability (NERPS) at Hiroshima University and Asia Institute of Technology',
+    location: 'Pathum Thani, Thailand',
+    year: '2023',
+    description: 'Paper Presenter/Participant at international conference on peace and sustainability',
+    tags: ['Peace Studies', 'Sustainability', 'International Conference', 'Paper Presentation']
+  },
+  {
+    id: '31',
+    type: 'seminar',
+    title: 'Geospatial Application in Water Resources Management (WRM)',
+    institution: 'KL Deemed to be University',
+    location: 'India',
+    year: '2023',
+    description: 'Guest Lecturer on geospatial applications in water resources management',
+    tags: ['Guest Lecture', 'Geospatial Applications', 'Water Resources', 'International']
+  },
+  {
+    id: '32',
+    type: 'seminar',
+    title: 'EduCamp 2022 – Inspire-Ignite-Innovate',
+    institution: 'Asian Institute of Technology',
+    location: 'Bangkok, Thailand',
+    year: '2022',
+    description: 'Facilitator - Special Degree Program international short course',
+    tags: ['Education Innovation', 'International Course', 'Facilitator', 'Special Program']
+  },
+  {
+    id: '33',
+    type: 'seminar',
+    title: 'Water Security and Climate Change, 2022 (WSCC, 2022)',
+    institution: 'Asian Institute of Technology',
+    location: 'Bangkok, Thailand',
+    year: '2022',
+    description: 'Participant in international conference on water security and climate change',
+    tags: ['Water Security', 'Climate Change', 'International Conference', 'Participant']
+  },
+  {
+    id: '34',
+    type: 'seminar',
+    title: 'Inter-Academia Asia 2019',
+    institution: 'Shizuoka University',
+    location: 'Shizuoka, Japan',
+    year: '2019',
+    description: 'Presenter at inter-academic conference in Asia',
+    tags: ['Inter-Academia', 'International Presenter', 'Academic Conference', 'Japan']
+  },
+  {
+    id: '35',
+    type: 'seminar',
+    title: 'Geospatial Application on Water Resources Management',
+    institution: 'Asian Institute of Technology',
+    location: 'Thailand',
+    year: '2019',
+    description: 'Resource Speaker - EduCamp – Inspire-Ignite-Innovate Special Degree Program international lecture',
+    tags: ['Resource Speaker', 'Water Resources', 'Geospatial Applications', 'International Lecture']
+  },
+  {
+    id: '36',
+    type: 'seminar',
+    title: '16th International Agricultural and Biosystems Engineering Conference and Exhibition',
+    institution: 'Philippine Society of Agricultural and Biosystem Engineers',
+    location: 'Philippines',
+    year: '2019',
+    description: 'International Presenter - 30th Philippine Agriculture Engineering Week, 69th PSABE Annual National Convention',
+    tags: ['Agricultural Engineering', 'International Conference', 'Presenter', 'PSABE']
+  },
+  {
+    id: '37',
+    type: 'seminar',
+    title: 'ABEngrs: Assembling the Agricultural Engineering Graduated for a Better Career Prospect',
+    institution: 'Mariano Marcos State University',
+    location: 'City of Batac, Ilocos Norte',
+    year: '2019',
+    description: 'Guest Speaker - Culminating Activity at Crop Research Laboratory',
+    tags: ['Guest Speaker', 'Agricultural Engineering', 'Career Development', 'University Event']
+  },
+  {
+    id: '38',
+    type: 'seminar',
+    title: 'Capability Building of MMSU Personnel under the DOST-Balik Scientist Program',
+    institution: 'MMSU Hostel',
+    location: 'City of Batac, Ilocos Norte',
+    year: '2019',
+    description: 'Participant in capability building program for university personnel',
+    tags: ['Capability Building', 'DOST Program', 'Balik Scientist', 'University Development']
+  },
+  {
+    id: '39',
+    type: 'seminar',
+    title: 'Seminar on Mitigation Hazardous Emissions through Innovative Swine Manure System',
+    institution: 'Mariano Marcos State University',
+    location: 'Philippines',
+    year: '2019',
+    description: 'Participant in seminar on innovative agricultural waste management systems',
+    tags: ['Environmental Management', 'Agricultural Innovation', 'Waste Management', 'Emissions Control']
+  },
+  {
+    id: '40',
+    type: 'seminar',
+    title: 'National Scientific Forum on Corn Production and Utilization',
+    institution: 'Isabela State University City Government of Ilogan Isabela Department of Agriculture',
+    location: 'Isabela, Philippines',
+    year: '2018',
+    description: 'National participant in scientific forum on corn production and utilization',
+    tags: ['Corn Production', 'Agricultural Science', 'National Forum', 'Crop Utilization']
+  },
+  {
+    id: '41',
+    type: 'seminar',
+    title: 'Local Stakeholders Convergence',
+    institution: 'Schools Division of Ilocos Norte Conference Hall',
+    location: 'Laoag City, Philippines',
+    year: '2018',
+    description: 'Participant in local stakeholders convergence meeting',
+    tags: ['Stakeholder Engagement', 'Local Development', 'Convergence Meeting', 'Community Planning']
+  },
+  {
+    id: '42',
+    type: 'seminar',
+    title: 'Meteorological Orientation Program: An Introduction to Climate, Weather, Hydrometerology and PAGASA Services',
+    institution: 'Mariano Marcos State University',
+    location: 'City of Batac, Ilocos Norte',
+    year: '2017',
+    description: 'Participant in meteorological orientation program covering climate and weather systems',
+    tags: ['Meteorology', 'Climate Science', 'PAGASA', 'Weather Systems']
+  },
+  {
+    id: '43',
+    type: 'seminar',
+    title: '2017 International Society for Southeast Asian Agricultural Sciences (ISSAAS) National Congress',
+    institution: 'MMSU Teatro Ilocandia',
+    location: 'City of Batac, Province of Ilocos Norte',
+    year: '2017',
+    description: 'Participant in international agricultural sciences congress and general meeting',
+    tags: ['Agricultural Sciences', 'International Congress', 'ISSAAS', 'Southeast Asia']
+  },
+  {
+    id: '44',
+    type: 'seminar',
+    title: '13th International Agricultural Engineering Conference & Exhibition',
+    institution: 'Philippine Society of Agricultural Engineering',
+    location: 'MMSU, City of Batac, Ilocos Norte',
+    year: '2015',
+    description: 'Participant - 66th Philippine Society of Agricultural Engineering Annual National Convention, 27th Philippine Agricultural Engineering Week',
+    tags: ['Agricultural Engineering', 'International Conference', 'National Convention', 'Engineering Week']
+  },
+  {
+    id: '45',
+    type: 'seminar',
+    title: 'Irrigation and Drainage, Soil and Water Conservation, Grains Postharvest Technology',
+    institution: 'AVR MMSU-COE',
+    location: 'Philippines',
+    year: '2015',
+    description: 'Participant in updates on agricultural engineering topics',
+    tags: ['Irrigation', 'Drainage', 'Soil Conservation', 'Postharvest Technology']
+  },
+  {
+    id: '46',
+    type: 'seminar',
+    title: 'Going ASEAN through ABE (Agricultural and Biosystems Engineering) Program',
+    institution: 'Cavite State University',
+    location: 'Philippines',
+    year: '2014',
+    description: 'Participant in national convention on ASEAN agricultural and biosystems engineering program',
+    tags: ['ASEAN Program', 'Agricultural Engineering', 'Biosystems Engineering', 'National Convention']
+  },
+  // Awards
+  {
+    id: '47',
     type: 'award',
     title: 'Best Green Financing Solution for Emission Reduction',
     institution: '"Hacking Zero" Hackathon – Sustainability Expo, Asian Institute of Technology',
@@ -190,7 +502,7 @@ const cvData: CVEntry[] = [
     tags: ['Innovation', 'Sustainability', 'Green Finance', 'Hackathon']
   },
   {
-    id: '17',
+    id: '48',
     type: 'award',
     title: 'DOST PhD Scholar 2022',
     institution: 'Science Education Institute – Department of Science and Technology, Philippines',
@@ -200,7 +512,7 @@ const cvData: CVEntry[] = [
     tags: ['Scholarship', 'PhD', 'Government Recognition', 'Education']
   },
   {
-    id: '18',
+    id: '49',
     type: 'award',
     title: '1st Place – Technical Paper Presenters',
     institution: '16th International Agricultural and Biosystems Engineering Conference',
@@ -210,7 +522,7 @@ const cvData: CVEntry[] = [
     tags: ['Research Excellence', 'Conference Award', 'Technical Paper', 'Flood Risk']
   },
   {
-    id: '19',
+    id: '50',
     type: 'award',
     title: '2nd Place – Technical Paper Presenters',
     institution: '16th International Agricultural and Biosystems Engineering Conference',
@@ -230,6 +542,7 @@ const CVViewer = () => {
     { value: 'education', label: 'Education' },
     { value: 'work', label: 'Work Experience' },
     { value: 'training', label: 'Training' },
+    { value: 'seminar', label: 'Seminars/Conferences' },
     { value: 'publication', label: 'Publications' },
     { value: 'award', label: 'Awards' }
   ];
@@ -240,6 +553,11 @@ const CVViewer = () => {
     const typeMatch = selectedFilter === 'all' || item.type === selectedFilter;
     const yearMatch = selectedYear === 'all' || item.year.includes(selectedYear);
     return typeMatch && yearMatch;
+  }).sort((a, b) => {
+    // Sort by year (latest first)
+    const yearA = parseInt(a.year.split('-')[0]);
+    const yearB = parseInt(b.year.split('-')[0]);
+    return yearB - yearA;
   });
 
   const getTypeColor = (type: string) => {
@@ -247,6 +565,7 @@ const CVViewer = () => {
       education: 'bg-blue-100 text-blue-800',
       work: 'bg-green-100 text-green-800',
       training: 'bg-purple-100 text-purple-800',
+      seminar: 'bg-pink-100 text-pink-800',
       publication: 'bg-orange-100 text-orange-800',
       award: 'bg-yellow-100 text-yellow-800'
     };
@@ -357,3 +676,4 @@ const CVViewer = () => {
 };
 
 export default CVViewer;
+
