@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -89,7 +90,7 @@ const cvData: CVEntry[] = [
     description: 'Teaching and research in agricultural engineering and sustainable development',
     tags: ['Teaching', 'Agricultural Engineering', 'Sustainable Development']
   },
-  // Publications - Updated with your actual publications
+  // Publications - Updated with correct list without duplications
   {
     id: '8',
     type: 'publication',
@@ -156,7 +157,7 @@ const cvData: CVEntry[] = [
     tags: ['Supplementary Information', 'Technical Procedures', 'CHIRPS', 'Bias Correction', 'Quartile Mapping'],
     link: 'http://dx.doi.org/10.13140/RG.2.2.28749.14560'
   },
-  // Training (selected major ones)
+  // Training - No duplications, focused list
   {
     id: '14',
     type: 'training',
@@ -176,6 +177,47 @@ const cvData: CVEntry[] = [
     year: '2023',
     description: 'Resource Person/Trainer for workshop on applying geospatial data for governance towards sustainable development',
     tags: ['Geospatial Data', 'Governance', 'Sustainable Development', 'Training']
+  },
+  // Awards - No duplications, focused list
+  {
+    id: '16',
+    type: 'award',
+    title: 'Best Green Financing Solution for Emission Reduction',
+    institution: '"Hacking Zero" Hackathon – Sustainability Expo, Asian Institute of Technology',
+    location: 'Thailand',
+    year: '2023',
+    description: 'Recognized for innovative green financing solution during sustainability hackathon',
+    tags: ['Innovation', 'Sustainability', 'Green Finance', 'Hackathon']
+  },
+  {
+    id: '17',
+    type: 'award',
+    title: 'DOST PhD Scholar 2022',
+    institution: 'Science Education Institute – Department of Science and Technology, Philippines',
+    location: 'Philippines',
+    year: '2022',
+    description: 'Foreign Graduate Scholarship Program for PhD in Remote Sensing and Geographic Information Systems',
+    tags: ['Scholarship', 'PhD', 'Government Recognition', 'Education']
+  },
+  {
+    id: '18',
+    type: 'award',
+    title: '1st Place – Technical Paper Presenters',
+    institution: '16th International Agricultural and Biosystems Engineering Conference',
+    location: 'Philippines',
+    year: '2019',
+    description: 'First place for "Flood Risk Assessment as Affected by Land Use Change for Policy Intervention: A Quiaoit River Watershed Case Study"',
+    tags: ['Research Excellence', 'Conference Award', 'Technical Paper', 'Flood Risk']
+  },
+  {
+    id: '19',
+    type: 'award',
+    title: '2nd Place – Technical Paper Presenters',
+    institution: '16th International Agricultural and Biosystems Engineering Conference',
+    location: 'Philippines',
+    year: '2019',
+    description: 'Second place for "Quantifying the Impact of Land Use Change as Affected by Groundwater Hydrology Using SWAT-MODFLOW Modeling"',
+    tags: ['Research Excellence', 'Conference Award', 'Technical Paper', 'Hydrological Modeling']
   }
 ];
 
