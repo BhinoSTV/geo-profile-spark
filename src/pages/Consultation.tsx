@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Calendar } from '@/components/ui/calendar';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { ArrowLeft, Clock, Video, Mail, Phone, Upload } from 'lucide-react';
+import { ArrowLeft, Clock, Video, Mail, Phone, Upload, Calendar as CalendarIcon } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
 
@@ -107,7 +107,7 @@ const Consultation = () => {
             <Card className="shadow-lg">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Calendar size={24} className="text-blue-600" />
+                  <CalendarIcon className="w-6 h-6 text-blue-600" />
                   Schedule Your Consultation
                 </CardTitle>
               </CardHeader>
