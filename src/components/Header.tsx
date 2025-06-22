@@ -1,20 +1,42 @@
 
 import React from 'react';
-import { Home, User, FileText, Award, Mail, FlaskConical } from 'lucide-react';
+import { Home, User, FileText, Award, Mail, FlaskConical, Calendar } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
+
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    // First navigate to home page if not already there
+    if (window.location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+  };
+
+  const handleConsultation = () => {
+    navigate('/consultation');
   };
 
   return (
     <header className="fixed top-0 w-full bg-background/90 backdrop-blur-sm border-b border-border z-50">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-primary">
+          <div 
+            className="text-2xl font-bold text-primary cursor-pointer"
+            onClick={() => navigate('/')}
+          >
             Julius I. Jimenez
           </div>
           <div className="hidden md:flex space-x-8">
@@ -52,6 +74,13 @@ const Header = () => {
             >
               <Award size={18} />
               <span>Awards</span>
+            </button>
+            <button 
+              onClick={handleConsultation}
+              className="flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-green-600 text-white px-4 py-2 rounded-lg hover:from-blue-700 hover:to-green-700 transition-all duration-200 shadow-md hover:shadow-lg"
+            >
+              <Calendar size={18} />
+              <span>Book Consultation</span>
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
