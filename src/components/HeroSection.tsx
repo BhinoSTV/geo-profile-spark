@@ -1,16 +1,9 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Calendar, Download, Mail } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Download, Mail } from 'lucide-react';
 
 const HeroSection = () => {
-  const navigate = useNavigate();
-
-  const handleBookConsultation = () => {
-    navigate('/consultation');
-  };
-
   const handleDownloadCV = () => {
     // Placeholder for CV download functionality
     console.log('Downloading CV...');
@@ -33,7 +26,7 @@ const HeroSection = () => {
               <div className="relative">
                 <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-8 border-white bg-gradient-to-br from-blue-100 to-green-100">
                   <img 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                    src="/lovable-uploads/2cc4a410-dff6-4543-8307-efe683ae7f4e.png"
                     alt="Julius I. Jimenez - Professional Agricultural and Biosystems Engineer"
                     className="w-full h-full object-cover"
                   />
@@ -59,18 +52,8 @@ const HeroSection = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-start items-start">
                 <Button 
-                  onClick={handleBookConsultation}
-                  className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200 min-w-[200px]"
-                  size="lg"
-                >
-                  <Calendar className="mr-2" size={20} />
-                  Book a Consultation
-                </Button>
-                
-                <Button 
                   onClick={handleDownloadCV}
-                  variant="outline" 
-                  className="border-2 border-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg min-w-[200px]"
+                  className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-8 py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200 min-w-[200px]"
                   size="lg"
                 >
                   <Download className="mr-2" size={20} />
@@ -79,7 +62,8 @@ const HeroSection = () => {
                 
                 <Button 
                   onClick={handleContact}
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 text-lg min-w-[200px] shadow-lg hover:shadow-xl transition-all duration-200"
+                  variant="outline" 
+                  className="border-2 border-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg min-w-[200px]"
                   size="lg"
                 >
                   <Mail className="mr-2" size={20} />
