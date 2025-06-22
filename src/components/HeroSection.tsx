@@ -100,6 +100,7 @@ const HeroSection = () => {
             </div>
           </div>
 
+          {/* Primary Expertise */}
           <div className="mt-12 sm:mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 shadow-lg border border-white/20">
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Remote Sensing</h3>
@@ -110,8 +111,39 @@ const HeroSection = () => {
               <p className="text-blue-200 text-sm sm:text-base">Integrated management and climate adaptation strategies</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 shadow-lg border border-white/20">
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">GIS Technology</h3>
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Geospatial Science and Technology</h3>
               <p className="text-blue-200 text-sm sm:text-base">Spatial data science and web-based decision support tools</p>
+            </div>
+          </div>
+
+          {/* Secondary Expertise */}
+          <div className="mt-8 sm:mt-12">
+            <h4 className="text-xl sm:text-2xl font-semibold text-white mb-6 text-center">Additional Areas of Expertise</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
+                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Project/Research/Thesis</h5>
+                <p className="text-blue-200 text-xs sm:text-sm">Conceptualization, Technical Writing, Critic</p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
+                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Statistics & Research Methods</h5>
+                <p className="text-blue-200 text-xs sm:text-sm">Advanced statistical analysis and methodology</p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
+                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Climate Change</h5>
+                <p className="text-blue-200 text-xs sm:text-sm">Impact assessment and adaptation strategies</p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
+                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Flood Simulation</h5>
+                <p className="text-blue-200 text-xs sm:text-sm">Hydrodynamic modeling and risk assessment</p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
+                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Geospatial Science</h5>
+                <p className="text-blue-200 text-xs sm:text-sm">Advanced spatial analysis and modeling</p>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
+                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Groundwater Modeling</h5>
+                <p className="text-blue-200 text-xs sm:text-sm">Aquifer simulation and sustainability analysis</p>
+              </div>
             </div>
           </div>
         </div>
