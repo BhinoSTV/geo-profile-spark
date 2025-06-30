@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Award, Trophy, Star, Medal } from 'lucide-react';
@@ -23,10 +22,10 @@ const awards: AwardItem[] = [
   },
   {
     id: '2',
-    title: 'Certificate of Achievement - AIT Mini Olympics 2025',
-    organization: 'Asian Institute of Technology, Student Union',
+    title: 'Third Place (Bronze Medal) - Badminton Male Doubles',
+    organization: 'AIT Mini Olympics, Asian Institute of Technology',
     year: '2025',
-    description: 'Certificate of Achievement for participating and securing position in Badminton (Mat, Doubles) in AIT Mini Olympics organized by Student Union - Sports Committee',
+    description: 'Third place (Bronze Medal) in Badminton Male Doubles at AIT Mini Olympics organized by Student Union - Sports Committee (January 2025)',
     type: 'recognition'
   },
   {
