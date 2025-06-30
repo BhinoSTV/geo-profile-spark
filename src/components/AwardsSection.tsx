@@ -23,6 +23,14 @@ const awards: AwardItem[] = [
   },
   {
     id: '2',
+    title: 'Certificate of Achievement - AIT Mini Olympics 2025',
+    organization: 'Asian Institute of Technology, Student Union',
+    year: '2025',
+    description: 'Certificate of Achievement for participating and securing position in Badminton (Mat, Doubles) in AIT Mini Olympics organized by Student Union - Sports Committee',
+    type: 'recognition'
+  },
+  {
+    id: '3',
     title: 'Best Green Financing Solution for Emission Reduction',
     organization: '"Hacking Zero" Hackathon – Sustainability Expo, Asian Institute of Technology',
     year: '2023',
@@ -30,7 +38,7 @@ const awards: AwardItem[] = [
     type: 'excellence'
   },
   {
-    id: '3',
+    id: '4',
     title: 'DOST PhD Scholar 2022',
     organization: 'Science Education Institute – Department of Science and Technology, Philippines',
     year: '2022',
@@ -38,7 +46,7 @@ const awards: AwardItem[] = [
     type: 'academic'
   },
   {
-    id: '4',
+    id: '5',
     title: '1st Place – Technical Paper Presenters',
     organization: '16th International Agricultural and Biosystems Engineering Conference',
     year: '2019',
@@ -46,7 +54,7 @@ const awards: AwardItem[] = [
     type: 'research'
   },
   {
-    id: '5',
+    id: '6',
     title: '2nd Place – Technical Paper Presenters',
     organization: '16th International Agricultural and Biosystems Engineering Conference',
     year: '2019',
@@ -54,7 +62,7 @@ const awards: AwardItem[] = [
     type: 'research'
   },
   {
-    id: '6',
+    id: '7',
     title: '1st Place Track and Field – Relay (100 m) Tournament',
     organization: 'AIT Mini Olympics, Asian Institute of Technology',
     year: '2023',
@@ -62,7 +70,7 @@ const awards: AwardItem[] = [
     type: 'recognition'
   },
   {
-    id: '7',
+    id: '8',
     title: '1st Place Basketball Tournament',
     organization: 'AIT Mini Olympics, Asian Institute of Technology',
     year: '2023',
