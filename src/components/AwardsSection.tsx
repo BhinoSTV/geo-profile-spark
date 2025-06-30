@@ -15,6 +15,14 @@ interface AwardItem {
 const awards: AwardItem[] = [
   {
     id: '1',
+    title: 'Third Place, Brown Bag Research Presentation Competition',
+    organization: 'Asian Institute of Technology, Pathum Thani, Thailand - Language Center & Research Support Program',
+    year: '2025',
+    description: 'Third place in Brown Bag Research Presentation Competition conducted by the Language Center & Research Support Program (14 May – 18 June 2025)',
+    type: 'research'
+  },
+  {
+    id: '2',
     title: 'Best Green Financing Solution for Emission Reduction',
     organization: '"Hacking Zero" Hackathon – Sustainability Expo, Asian Institute of Technology',
     year: '2023',
@@ -22,7 +30,7 @@ const awards: AwardItem[] = [
     type: 'excellence'
   },
   {
-    id: '2',
+    id: '3',
     title: 'DOST PhD Scholar 2022',
     organization: 'Science Education Institute – Department of Science and Technology, Philippines',
     year: '2022',
@@ -30,7 +38,7 @@ const awards: AwardItem[] = [
     type: 'academic'
   },
   {
-    id: '3',
+    id: '4',
     title: '1st Place – Technical Paper Presenters',
     organization: '16th International Agricultural and Biosystems Engineering Conference',
     year: '2019',
@@ -38,7 +46,7 @@ const awards: AwardItem[] = [
     type: 'research'
   },
   {
-    id: '4',
+    id: '5',
     title: '2nd Place – Technical Paper Presenters',
     organization: '16th International Agricultural and Biosystems Engineering Conference',
     year: '2019',
@@ -46,7 +54,7 @@ const awards: AwardItem[] = [
     type: 'research'
   },
   {
-    id: '5',
+    id: '6',
     title: '1st Place Track and Field – Relay (100 m) Tournament',
     organization: 'AIT Mini Olympics, Asian Institute of Technology',
     year: '2023',
@@ -54,7 +62,7 @@ const awards: AwardItem[] = [
     type: 'recognition'
   },
   {
-    id: '6',
+    id: '7',
     title: '1st Place Basketball Tournament',
     organization: 'AIT Mini Olympics, Asian Institute of Technology',
     year: '2023',

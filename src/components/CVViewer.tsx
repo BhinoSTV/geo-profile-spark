@@ -6,7 +6,7 @@ import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 
 interface CVEntry {
   id: string;
-  type: 'education' | 'work' | 'training' | 'publication' | 'award' | 'seminar';
+  type: 'education' | 'work' | 'training' | 'publication' | 'award' | 'seminar' | 'presentation';
   title: string;
   institution: string;
   location: string;
@@ -17,6 +17,17 @@ interface CVEntry {
 }
 
 const cvData: CVEntry[] = [
+  // Academic Presentations
+  {
+    id: 'pres1',
+    type: 'presentation',
+    title: '"Groundwater Recharge Modeling Towards Sustainable Agriculture in the Context of Climate Change"',
+    institution: 'Brown Bag Research Presentation Competition, Asian Institute of Technology',
+    location: 'Pathum Thani, Thailand',
+    year: '2025',
+    description: 'Academic presentation at Brown Bag Research Presentation Competition (May–June 2025)',
+    tags: ['Academic Presentation', 'Groundwater Modeling', 'Sustainable Agriculture', 'Climate Change', 'Research Competition', 'Presenter']
+  },
   // Education
   {
     id: '1',
@@ -579,6 +590,17 @@ const cvData: CVEntry[] = [
     year: '2019',
     description: 'Second place for "Quantifying the Impact of Land Use Change as Affected by Groundwater Hydrology Using SWAT-MODFLOW Modeling"',
     tags: ['Research Excellence', 'Conference Award', 'Technical Paper', 'Hydrological Modeling']
+  },
+  // New Award Entry
+  {
+    id: '56',
+    type: 'award',
+    title: 'Third Place, Brown Bag Research Presentation Competition',
+    institution: 'Asian Institute of Technology, Language Center & Research Support Program',
+    location: 'Pathum Thani, Thailand',
+    year: '2025',
+    description: 'Third place in Brown Bag Research Presentation Competition conducted by the Language Center & Research Support Program (14 May – 18 June 2025)',
+    tags: ['Research Competition', 'Academic Excellence', 'Presentation Award', 'Third Place']
   }
 ];
 
@@ -592,6 +614,7 @@ const CVViewer = () => {
     { value: 'work', label: 'Work Experience' },
     { value: 'training', label: 'Training' },
     { value: 'seminar', label: 'Seminars/Conferences' },
+    { value: 'presentation', label: 'Academic Presentations' },
     { value: 'publication', label: 'Publications' },
     { value: 'award', label: 'Awards' }
   ];
@@ -615,6 +638,7 @@ const CVViewer = () => {
       work: 'bg-green-100 text-green-800',
       training: 'bg-purple-100 text-purple-800',
       seminar: 'bg-pink-100 text-pink-800',
+      presentation: 'bg-indigo-100 text-indigo-800',
       publication: 'bg-orange-100 text-orange-800',
       award: 'bg-yellow-100 text-yellow-800'
     };
