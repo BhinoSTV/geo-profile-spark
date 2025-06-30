@@ -17,7 +17,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16 sm:pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 sm:pt-24 md:pt-28 lg:pt-16 xl:pt-20">
       {/* Remote Sensing Themed Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-900 to-green-900">
         {/* Satellite orbit paths */}
@@ -36,12 +36,14 @@ const HeroSection = () => {
           backgroundSize: '50px 50px'
         }}></div>
         
-        {/* Floating data points */}
+        {/* Floating data points with more dynamic movement */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
           <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-green-400 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
           <div className="absolute bottom-1/3 left-1/2 w-2 h-2 bg-cyan-400 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
           <div className="absolute top-2/3 right-1/4 w-2 h-2 bg-yellow-400 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+          <div className="absolute top-1/6 right-1/6 w-1 h-1 bg-purple-400 rounded-full animate-ping" style={{ animationDelay: '2.5s' }}></div>
+          <div className="absolute bottom-1/6 left-1/6 w-1 h-1 bg-red-400 rounded-full animate-ping" style={{ animationDelay: '1.5s' }}></div>
         </div>
       </div>
 
@@ -51,49 +53,51 @@ const HeroSection = () => {
             {/* Photo Section */}
             <div className="order-2 lg:order-1 flex justify-center">
               <div className="relative">
-                <div className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-4 sm:border-8 border-white/80 bg-gradient-to-br from-blue-100 to-green-100 backdrop-blur-sm">
+                <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden shadow-2xl border-4 sm:border-6 md:border-8 border-white/80 bg-gradient-to-br from-blue-100 to-green-100 backdrop-blur-sm transition-all duration-300 hover:scale-105">
                   <img 
                     src="/lovable-uploads/2cc4a410-dff6-4543-8307-efe683ae7f4e.png"
                     alt="Julius I. Jimenez - Professional Agricultural and Biosystems Engineer"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-2 sm:-bottom-4 -right-2 sm:-right-4 bg-gradient-to-r from-blue-600 to-green-600 text-white px-3 py-1 sm:px-6 sm:py-2 rounded-full shadow-lg text-sm sm:text-base">
+                <div className="absolute -bottom-2 sm:-bottom-3 md:-bottom-4 -right-2 sm:-right-3 md:-right-4 bg-gradient-to-r from-blue-600 to-green-600 text-white px-2 py-1 sm:px-4 sm:py-2 md:px-6 md:py-2 rounded-full shadow-lg text-xs sm:text-sm md:text-base animate-pulse">
                   <span className="font-semibold">PhD Scholar</span>
                 </div>
               </div>
             </div>
 
             {/* Content Section */}
-            <div className="order-1 lg:order-2 text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-                Julius I. Jimenez
+            <div className="order-1 lg:order-2 text-center lg:text-left space-y-4 sm:space-y-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-white mb-2 sm:mb-4 leading-tight animate-fadeIn">
+                <span className="bg-gradient-to-r from-blue-200 via-white to-green-200 bg-clip-text text-transparent">
+                  Julius I. Jimenez
+                </span>
               </h1>
-              <p className="text-lg sm:text-xl md:text-2xl text-blue-100 mb-4 sm:mb-6">
+              <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-blue-100 mb-3 sm:mb-4 md:mb-6 animate-slideUp" style={{ animationDelay: '0.2s' }}>
                 Professional Agricultural and Biosystems Engineer | PhD Scholar
               </p>
-              <p className="text-base sm:text-lg text-blue-200 mb-6 sm:mb-8 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+              <p className="text-sm sm:text-base md:text-lg text-blue-200 mb-4 sm:mb-6 md:mb-8 max-w-2xl leading-relaxed mx-auto lg:mx-0 animate-slideUp" style={{ animationDelay: '0.4s' }}>
                 Specializing in Remote Sensing, GIS, Water Resources Management, and Climate Change Adaptation. 
                 Center Head of GeoSpaDa Hub at Asian Institute of Technology.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center animate-slideUp" style={{ animationDelay: '0.6s' }}>
                 <Button 
                   onClick={handleDownloadCV}
-                  className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg shadow-lg hover:shadow-xl transition-all duration-200 w-full sm:w-auto min-w-[200px]"
+                  className="bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white font-semibold px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto min-w-[180px] sm:min-w-[200px] hover:scale-105"
                   size="lg"
                 >
-                  <Download className="mr-2" size={18} />
+                  <Download className="mr-2" size={16} />
                   Download CV
                 </Button>
                 
                 <Button 
                   onClick={handleContact}
                   variant="outline" 
-                  className="border-2 border-white/80 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-gray-900 px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg w-full sm:w-auto min-w-[200px] transition-all duration-200"
+                  className="border-2 border-white/80 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-gray-900 px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 text-sm sm:text-base md:text-lg w-full sm:w-auto min-w-[180px] sm:min-w-[200px] transition-all duration-300 hover:scale-105"
                   size="lg"
                 >
-                  <Mail className="mr-2" size={18} />
+                  <Mail className="mr-2" size={16} />
                   Get in Touch
                 </Button>
               </div>
@@ -101,47 +105,47 @@ const HeroSection = () => {
           </div>
 
           {/* Primary Expertise */}
-          <div className="mt-12 sm:mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 text-center">
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 shadow-lg border border-white/20">
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Remote Sensing</h3>
-              <p className="text-blue-200 text-sm sm:text-base">Advanced geospatial analysis and satellite data processing</p>
+          <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 text-center animate-slideUp" style={{ animationDelay: '0.8s' }}>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 shadow-lg border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-2">Remote Sensing</h3>
+              <p className="text-blue-200 text-xs sm:text-sm md:text-base">Advanced geospatial analysis and satellite data processing</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 shadow-lg border border-white/20">
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Water Resources</h3>
-              <p className="text-blue-200 text-sm sm:text-base">Integrated management and climate adaptation strategies</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 shadow-lg border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-2">Water Resources</h3>
+              <p className="text-blue-200 text-xs sm:text-sm md:text-base">Integrated management and climate adaptation strategies</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 sm:p-6 shadow-lg border border-white/20">
-              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Geospatial Science and Technology</h3>
-              <p className="text-blue-200 text-sm sm:text-base">Spatial data science and web-based decision support tools</p>
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 md:p-6 shadow-lg border border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-2">Geospatial Science and Technology</h3>
+              <p className="text-blue-200 text-xs sm:text-sm md:text-base">Spatial data science and web-based decision support tools</p>
             </div>
           </div>
 
           {/* Secondary Expertise */}
-          <div className="mt-8 sm:mt-12">
-            <h4 className="text-xl sm:text-2xl font-semibold text-white mb-6 text-center">Additional Areas of Expertise</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
-                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Project/Research/Thesis</h5>
+          <div className="mt-6 sm:mt-8 md:mt-12">
+            <h4 className="text-lg sm:text-xl md:text-2xl font-semibold text-white mb-4 sm:mb-6 text-center animate-slideUp" style={{ animationDelay: '1s' }}>Additional Areas of Expertise</h4>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 animate-slideUp" style={{ animationDelay: '1.2s' }}>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2 sm:p-3 md:p-4 shadow-md border border-white/10 text-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                <h5 className="text-sm sm:text-base md:text-lg font-medium text-white mb-1">Project/Research/Thesis</h5>
                 <p className="text-blue-200 text-xs sm:text-sm">Conceptualization, Technical Writing, Critic</p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
-                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Statistics & Research Methods</h5>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2 sm:p-3 md:p-4 shadow-md border border-white/10 text-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                <h5 className="text-sm sm:text-base md:text-lg font-medium text-white mb-1">Statistics & Research Methods</h5>
                 <p className="text-blue-200 text-xs sm:text-sm">Advanced statistical analysis and methodology</p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
-                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Climate Change</h5>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2 sm:p-3 md:p-4 shadow-md border border-white/10 text-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                <h5 className="text-sm sm:text-base md:text-lg font-medium text-white mb-1">Climate Change</h5>
                 <p className="text-blue-200 text-xs sm:text-sm">Impact assessment and adaptation strategies</p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
-                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Flood Simulation</h5>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2 sm:p-3 md:p-4 shadow-md border border-white/10 text-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                <h5 className="text-sm sm:text-base md:text-lg font-medium text-white mb-1">Flood Simulation</h5>
                 <p className="text-blue-200 text-xs sm:text-sm">Hydrodynamic modeling and risk assessment</p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
-                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Geospatial Science</h5>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2 sm:p-3 md:p-4 shadow-md border border-white/10 text-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                <h5 className="text-sm sm:text-base md:text-lg font-medium text-white mb-1">Geospatial Science</h5>
                 <p className="text-blue-200 text-xs sm:text-sm">Advanced spatial analysis and modeling</p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-3 sm:p-4 shadow-md border border-white/10 text-center">
-                <h5 className="text-base sm:text-lg font-medium text-white mb-1">Groundwater Modeling</h5>
+              <div className="bg-white/5 backdrop-blur-sm rounded-lg p-2 sm:p-3 md:p-4 shadow-md border border-white/10 text-center hover:bg-white/10 transition-all duration-300 hover:scale-105">
+                <h5 className="text-sm sm:text-base md:text-lg font-medium text-white mb-1">Groundwater Modeling</h5>
                 <p className="text-blue-200 text-xs sm:text-sm">Aquifer simulation and sustainability analysis</p>
               </div>
             </div>
