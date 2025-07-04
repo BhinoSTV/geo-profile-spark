@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, MapPin, Download, Send, Phone } from 'lucide-react';
+import { Mail, MapPin, Download, Send, Phone, Facebook, Youtube } from 'lucide-react';
 import { toast } from 'sonner';
 
 const ContactSection = () => {
@@ -70,6 +70,29 @@ const ContactSection = () => {
                 <div className="flex items-center gap-3">
                   <MapPin size={18} className="text-muted-foreground" />
                   <span>#3 Salbang Paoay (2902), Ilocos Norte, Philippines</span>
+                </div>
+                <div className="border-t pt-4 mt-4">
+                  <h4 className="font-medium mb-3">Follow me on social media</h4>
+                  <div className="flex gap-4">
+                    <a 
+                      href="https://youtube.com/@thaibino6874?si=f8dHUrhB139yWeHT" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-red-600 hover:text-red-700 transition-colors"
+                    >
+                      <Youtube size={20} />
+                      <span>YouTube</span>
+                    </a>
+                    <a 
+                      href="https://www.facebook.com/dokbin053" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors"
+                    >
+                      <Facebook size={20} />
+                      <span>Facebook</span>
+                    </a>
+                  </div>
                 </div>
               </CardContent>
             </Card>
