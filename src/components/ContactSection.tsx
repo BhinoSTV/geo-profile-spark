@@ -72,7 +72,48 @@ const ContactSection = () => {
                   <span>#3 Salbang Paoay (2902), Ilocos Norte, Philippines</span>
                 </div>
                 <div className="border-t pt-4 mt-4">
-                  <h4 className="font-medium mb-3">Follow me on social media</h4>
+                  <h4 className="font-medium mb-3">Research Profiles</h4>
+                  <div className="grid grid-cols-2 gap-3 text-sm">
+                    <a 
+                      href="#" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                    >
+                      <span className="w-4 h-4 bg-primary rounded"></span>
+                      <span>ResearchGate</span>
+                    </a>
+                    <a 
+                      href="#" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                    >
+                      <span className="w-4 h-4 bg-primary rounded"></span>
+                      <span>Google Scholar</span>
+                    </a>
+                    <a 
+                      href="#" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                    >
+                      <span className="w-4 h-4 bg-primary rounded"></span>
+                      <span>Web of Science</span>
+                    </a>
+                    <a 
+                      href="#" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                    >
+                      <span className="w-4 h-4 bg-primary rounded"></span>
+                      <span>ORCID</span>
+                    </a>
+                  </div>
+                </div>
+                <div className="border-t pt-4 mt-4">
+                  <h4 className="font-medium mb-3">Social Media</h4>
                   <div className="flex gap-4">
                     <a 
                       href="https://youtube.com/@thaibino6874?si=f8dHUrhB139yWeHT" 
