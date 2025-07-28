@@ -591,9 +591,19 @@ const cvData: CVEntry[] = [
     description: 'Second place for "Quantifying the Impact of Land Use Change as Affected by Groundwater Hydrology Using SWAT-MODFLOW Modeling"',
     tags: ['Research Excellence', 'Conference Award', 'Technical Paper', 'Hydrological Modeling']
   },
-  // New Award Entry
+  // Awards
   {
     id: '56',
+    type: 'award',
+    title: 'Publication Incentives Award',
+    institution: 'Department of Science and Technology (DOST) - Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development (PCAARRD)',
+    location: 'Philippines',
+    year: '2025',
+    description: 'Publication Incentives Award for journal article "Assessment of the spatiotemporal dynamics of river discharge and groundwater recharge to support sustainable water management for irrigated agriculture in the Padsan river watershed" published in Earth Science Informatics (July 11, 2025)',
+    tags: ['Publication Award', 'Research Excellence', 'Government Recognition', 'DOST']
+  },
+  {
+    id: '57',
     type: 'award',
     title: 'Third Place, Brown Bag Research Presentation Competition',
     institution: 'Asian Institute of Technology, Language Center & Research Support Program',
@@ -601,6 +611,36 @@ const cvData: CVEntry[] = [
     year: '2025',
     description: 'Third place in Brown Bag Research Presentation Competition conducted by the Language Center & Research Support Program (14 May – 18 June 2025)',
     tags: ['Research Competition', 'Academic Excellence', 'Presentation Award', 'Third Place']
+  },
+  {
+    id: '58',
+    type: 'award',
+    title: 'Third Place (Bronze Medal) - Badminton Male Doubles',
+    institution: 'AIT Mini Olympics, Asian Institute of Technology',
+    location: 'Pathum Thani, Thailand',
+    year: '2025',
+    description: 'Third place (Bronze Medal) in Badminton Male Doubles at AIT Mini Olympics organized by Student Union - Sports Committee (January 2025)',
+    tags: ['Sports Award', 'Bronze Medal', 'Badminton', 'Team Sports']
+  },
+  {
+    id: '59',
+    type: 'award',
+    title: '1st Place Track and Field – Relay (100 m) Tournament',
+    institution: 'AIT Mini Olympics, Asian Institute of Technology',
+    location: 'Pathum Thani, Thailand',
+    year: '2023',
+    description: 'First place in 100m relay during AIT Mini Olympics sports tournament',
+    tags: ['Sports Award', 'First Place', 'Track and Field', 'Team Sports']
+  },
+  {
+    id: '60',
+    type: 'award',
+    title: '1st Place Basketball Tournament',
+    institution: 'AIT Mini Olympics, Asian Institute of Technology',
+    location: 'Pathum Thani, Thailand',
+    year: '2023',
+    description: 'First place in basketball tournament during AIT Mini Olympics',
+    tags: ['Sports Award', 'First Place', 'Basketball', 'Team Sports']
   }
 ];
 
