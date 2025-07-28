@@ -14,6 +14,14 @@ interface AwardItem {
 const awards: AwardItem[] = [
   {
     id: '1',
+    title: 'Publication Incentives Award',
+    organization: 'Department of Science and Technology (DOST) - Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development (PCAARRD)',
+    year: '2025',
+    description: 'Publication Incentives Award for journal article "Assessment of the spatiotemporal dynamics of river discharge and groundwater recharge to support sustainable water management for irrigated agriculture in the Padsan river watershed" published in Earth Science Informatics (July 11, 2025)',
+    type: 'research'
+  },
+  {
+    id: '2',
     title: 'Third Place, Brown Bag Research Presentation Competition',
     organization: 'Asian Institute of Technology, Pathum Thani, Thailand - Language Center & Research Support Program',
     year: '2025',
@@ -21,7 +29,7 @@ const awards: AwardItem[] = [
     type: 'research'
   },
   {
-    id: '2',
+    id: '3',
     title: 'Third Place (Bronze Medal) - Badminton Male Doubles',
     organization: 'AIT Mini Olympics, Asian Institute of Technology',
     year: '2025',
@@ -29,7 +37,7 @@ const awards: AwardItem[] = [
     type: 'recognition'
   },
   {
-    id: '3',
+    id: '4',
     title: 'Best Green Financing Solution for Emission Reduction',
     organization: '"Hacking Zero" Hackathon – Sustainability Expo, Asian Institute of Technology',
     year: '2023',
@@ -37,7 +45,7 @@ const awards: AwardItem[] = [
     type: 'excellence'
   },
   {
-    id: '4',
+    id: '5',
     title: 'DOST PhD Scholar 2022',
     organization: 'Science Education Institute – Department of Science and Technology, Philippines',
     year: '2022',
@@ -45,7 +53,7 @@ const awards: AwardItem[] = [
     type: 'academic'
   },
   {
-    id: '5',
+    id: '6',
     title: '1st Place – Technical Paper Presenters',
     organization: '16th International Agricultural and Biosystems Engineering Conference',
     year: '2019',
@@ -53,7 +61,7 @@ const awards: AwardItem[] = [
     type: 'research'
   },
   {
-    id: '6',
+    id: '7',
     title: '2nd Place – Technical Paper Presenters',
     organization: '16th International Agricultural and Biosystems Engineering Conference',
     year: '2019',
@@ -61,7 +69,7 @@ const awards: AwardItem[] = [
     type: 'research'
   },
   {
-    id: '7',
+    id: '8',
     title: '1st Place Track and Field – Relay (100 m) Tournament',
     organization: 'AIT Mini Olympics, Asian Institute of Technology',
     year: '2023',
@@ -69,7 +77,7 @@ const awards: AwardItem[] = [
     type: 'recognition'
   },
   {
-    id: '8',
+    id: '9',
     title: '1st Place Basketball Tournament',
     organization: 'AIT Mini Olympics, Asian Institute of Technology',
     year: '2023',
