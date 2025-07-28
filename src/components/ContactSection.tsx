@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, MapPin, Download, Send, Phone, Facebook, Youtube } from 'lucide-react';
+import { Mail, MapPin, Download, Send, Phone, Facebook, Youtube, ExternalLink, BookOpen, GraduationCap, Search } from 'lucide-react';
 import { toast } from 'sonner';
 
 const ContactSection = () => {
@@ -72,43 +72,47 @@ const ContactSection = () => {
                   <span>#3 Salbang Paoay (2902), Ilocos Norte, Philippines</span>
                 </div>
                 <div className="border-t pt-4 mt-4">
-                  <h4 className="font-medium mb-3">Research Profiles</h4>
+                  <h4 className="font-medium mb-3 text-foreground">Research Profiles</h4>
                   <div className="grid grid-cols-2 gap-3 text-sm">
                     <a 
                       href="#" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                      className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors p-2 rounded bg-blue-50 hover:bg-blue-100"
                     >
-                      <span className="w-4 h-4 bg-primary rounded"></span>
+                      <BookOpen size={16} />
                       <span>ResearchGate</span>
+                      <ExternalLink size={12} className="ml-auto" />
                     </a>
                     <a 
                       href="#" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                      className="flex items-center gap-2 text-blue-600 hover:text-blue-700 transition-colors p-2 rounded bg-blue-50 hover:bg-blue-100"
                     >
-                      <span className="w-4 h-4 bg-primary rounded"></span>
+                      <GraduationCap size={16} />
                       <span>Google Scholar</span>
+                      <ExternalLink size={12} className="ml-auto" />
                     </a>
                     <a 
                       href="#" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                      className="flex items-center gap-2 text-purple-600 hover:text-purple-700 transition-colors p-2 rounded bg-purple-50 hover:bg-purple-100"
                     >
-                      <span className="w-4 h-4 bg-primary rounded"></span>
+                      <Search size={16} />
                       <span>Web of Science</span>
+                      <ExternalLink size={12} className="ml-auto" />
                     </a>
                     <a 
                       href="#" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                      className="flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors p-2 rounded bg-green-50 hover:bg-green-100"
                     >
-                      <span className="w-4 h-4 bg-primary rounded"></span>
+                      <ExternalLink size={16} />
                       <span>ORCID</span>
+                      <ExternalLink size={12} className="ml-auto" />
                     </a>
                   </div>
                 </div>
