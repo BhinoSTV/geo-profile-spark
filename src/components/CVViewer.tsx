@@ -595,6 +595,16 @@ const cvData: CVEntry[] = [
   {
     id: '56',
     type: 'award',
+    title: 'Best Paper Award',
+    institution: '4th International Conference on Governance and Development (ICGD4), Kasetsart University',
+    location: 'Thailand',
+    year: '2025',
+    description: 'Best Paper Award for "Geospatial Governance for Sustainable Conjunctive Use of Water Resources" (August 1, 2025)',
+    tags: ['Best Paper', 'Research Excellence', 'Conference Award', 'Water Resources']
+  },
+  {
+    id: '57',
+    type: 'award',
     title: 'Publication Incentives Award',
     institution: 'Department of Science and Technology (DOST) - Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development (PCAARRD)',
     location: 'Philippines',
@@ -603,13 +613,13 @@ const cvData: CVEntry[] = [
     tags: ['Publication Award', 'Research Excellence', 'Government Recognition', 'DOST']
   },
   {
-    id: '57',
+    id: '58',
     type: 'award',
-    title: 'Third Place, Brown Bag Research Presentation Competition',
-    institution: 'Asian Institute of Technology, Language Center & Research Support Program',
+    title: 'Third Place Best Presenter',
+    institution: 'Asian Institute of Technology, Brown Bag Competition',
     location: 'Pathum Thani, Thailand',
     year: '2025',
-    description: 'Third place in Brown Bag Research Presentation Competition conducted by the Language Center & Research Support Program (14 May – 18 June 2025)',
+    description: 'Groundwater Recharge Modelling for Sustainable Agriculture in the Context of Climate Change (May 14 to June 18, 2025)',
     tags: ['Research Competition', 'Academic Excellence', 'Presentation Award', 'Third Place']
   },
   {

@@ -14,6 +14,14 @@ interface AwardItem {
 const awards: AwardItem[] = [
   {
     id: '1',
+    title: 'Best Paper Award',
+    organization: '4th International Conference on Governance and Development (ICGD4), Kasetsart University',
+    year: '2025',
+    description: 'Best Paper Award for "Geospatial Governance for Sustainable Conjunctive Use of Water Resources" (August 1, 2025)',
+    type: 'research'
+  },
+  {
+    id: '2',
     title: 'Publication Incentives Award',
     organization: 'Department of Science and Technology (DOST) - Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development (PCAARRD)',
     year: '2025',
@@ -21,15 +29,15 @@ const awards: AwardItem[] = [
     type: 'research'
   },
   {
-    id: '2',
-    title: 'Third Place, Brown Bag Research Presentation Competition',
-    organization: 'Asian Institute of Technology, Pathum Thani, Thailand - Language Center & Research Support Program',
+    id: '3',
+    title: 'Third Place Best Presenter',
+    organization: 'Asian Institute of Technology, Thailand - Brown Bag Competition',
     year: '2025',
-    description: 'Third place in Brown Bag Research Presentation Competition conducted by the Language Center & Research Support Program (14 May – 18 June 2025)',
+    description: 'Groundwater Recharge Modelling for Sustainable Agriculture in the Context of Climate Change (May 14 to June 18, 2025)',
     type: 'research'
   },
   {
-    id: '3',
+    id: '4',
     title: 'Third Place (Bronze Medal) - Badminton Male Doubles',
     organization: 'AIT Mini Olympics, Asian Institute of Technology',
     year: '2025',
