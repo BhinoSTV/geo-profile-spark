@@ -77,8 +77,8 @@ const HeroSection = () => {
                 Professional Agricultural and Biosystems Engineer | PhD Scholar
               </p>
               <p className="text-sm sm:text-base md:text-lg text-blue-200 mb-8 sm:mb-10 max-w-2xl leading-relaxed mx-auto lg:mx-0 animate-slideUp" style={{ animationDelay: '0.4s' }}>
-                Specializing in Remote Sensing, GIS, Water Resources Management, and Climate Change Adaptation. 
-                Center Head of GeoSpaDa Hub at Asian Institute of Technology.
+                Specializing in Remote Sensing, GIS, Water Resources Management, and Climate Change Adaptation.
+                Center Head of GeoSpaDa Hub.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start items-center animate-slideUp" style={{ animationDelay: '0.6s' }}>

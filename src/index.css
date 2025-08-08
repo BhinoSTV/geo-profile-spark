@@ -52,6 +52,11 @@
     --sidebar-border: 220 13% 91%;
 
     --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Trading ticker theme tokens */
+    --trading-bg: 222.2 84% 6%;
+    --trading-electric: 199 89% 55%;
+    --trading-electric-glow: 199 89% 65%;
   }
 
   .dark {
@@ -143,5 +148,16 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+/* Ticker animation */
+@layer utilities {
+  .animate-ticker {
+    animation: ticker-scroll 30s linear infinite;
+  }
+  @keyframes ticker-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
 }

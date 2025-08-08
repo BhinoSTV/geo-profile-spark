@@ -1,7 +1,7 @@
-
 import React, { useState } from 'react';
 import { Home, User, FileText, Award, Mail, FlaskConical, Calendar, Menu, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import TickerBar from './TickerBar';
 
 const Header = () => {
   const navigate = useNavigate();
@@ -40,6 +40,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 w-full bg-background/90 backdrop-blur-sm border-b border-border z-50">
+      <TickerBar />
       <div className="container mx-auto px-4 sm:px-6 py-4">
         <nav className="flex items-center justify-between">
           <div 
