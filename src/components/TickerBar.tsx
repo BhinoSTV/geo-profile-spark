@@ -14,14 +14,17 @@ const assetsMap: Record<string, TickerAsset['symbol']> = {
 };
 
 const fetchPrices = async (): Promise<TickerAsset[]> => {
-  const res = await fetch('https://api.coincap.io/v2/assets?ids=bitcoin,ethereum,solana');
+  const res = await fetch(
+    'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true'
+  );
   const json = await res.json();
-  const list = (json?.data || []) as Array<{ id: string; priceUsd: string; changePercent24Hr: string }>; 
-  return list.map((d) => ({
-    symbol: assetsMap[d.id],
-    name: d.id as TickerAsset['name'],
-    priceUsd: Number(d.priceUsd),
-    changePercent24Hr: Number(d.changePercent24Hr),
+  const data = json as Record<string, { usd: number; usd_24h_change: number }>; 
+  const ids: Array<TickerAsset['name']> = ['bitcoin', 'ethereum', 'solana'];
+  return ids.map((id) => ({
+    symbol: assetsMap[id],
+    name: id,
+    priceUsd: Number(data[id]?.usd ?? 0),
+    changePercent24Hr: Number(data[id]?.usd_24h_change ?? 0),
   }));
 };
 
@@ -59,7 +62,7 @@ const TickerBar: React.FC = () => {
       }
     };
     load();
-    intervalRef.current = window.setInterval(load, 30000);
+    intervalRef.current = window.setInterval(load, 10000);
     return () => {
       mounted = false;
       if (intervalRef.current) window.clearInterval(intervalRef.current);
