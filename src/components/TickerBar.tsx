@@ -1,30 +1,38 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 
 interface TickerAsset {
-  symbol: 'BTC' | 'ETH' | 'SOL';
-  name: 'bitcoin' | 'ethereum' | 'solana';
+  symbol: string; // e.g., BTC
+  name: string;   // e.g., bitcoin
   priceUsd: number;
   changePercent24Hr: number;
 }
 
-const assetsMap: Record<string, TickerAsset['symbol']> = {
-  bitcoin: 'BTC',
-  ethereum: 'ETH',
-  solana: 'SOL',
-};
+// Common stablecoin symbols to exclude from the top list
+const STABLECOIN_SYMBOLS = new Set([
+  'USDT','USDC','BUSD','DAI','TUSD','USDP','UST','USTC','EURS','EURT','PYUSD','FDUSD'
+]);
 
 const fetchPrices = async (): Promise<TickerAsset[]> => {
-  const res = await fetch(
-    'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd&include_24hr_change=true'
-  );
-  const json = await res.json();
-  const data = json as Record<string, { usd: number; usd_24h_change: number }>; 
-  const ids: Array<TickerAsset['name']> = ['bitcoin', 'ethereum', 'solana'];
-  return ids.map((id) => ({
-    symbol: assetsMap[id],
-    name: id,
-    priceUsd: Number(data[id]?.usd ?? 0),
-    changePercent24Hr: Number(data[id]?.usd_24h_change ?? 0),
+  const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=15&page=1&sparkline=false&price_change_percentage=24h';
+  const res = await fetch(url);
+  const list = (await res.json()) as Array<{
+    id: string;
+    symbol: string;
+    name: string;
+    current_price: number;
+    price_change_percentage_24h: number | null;
+  }>;
+
+  // Filter out stablecoins by symbol and take the top 10
+  const filtered = list
+    .filter((c) => !STABLECOIN_SYMBOLS.has(c.symbol.toUpperCase()))
+    .slice(0, 10);
+
+  return filtered.map((c) => ({
+    symbol: c.symbol.toUpperCase(),
+    name: c.id,
+    priceUsd: Number(c.current_price ?? 0),
+    changePercent24Hr: Number(c.price_change_percentage_24h ?? 0),
   }));
 };
 
