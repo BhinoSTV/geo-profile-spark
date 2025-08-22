@@ -55,7 +55,7 @@ const HeroSection = () => {
               <div className="relative">
                 <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96 rounded-full overflow-hidden shadow-2xl border-4 sm:border-6 md:border-8 border-white/80 bg-gradient-to-br from-blue-100 to-green-100 backdrop-blur-sm transition-all duration-300 hover:scale-105">
                   <img 
-                    src="/lovable-uploads/2cc4a410-dff6-4543-8307-efe683ae7f4e.png"
+                    src="/lovable-uploads/5e2a5d8f-b3f3-4cba-b8dd-df8814ef6353.png"
                     alt="Julius I. Jimenez - Professional Agricultural and Biosystems Engineer"
                     className="w-full h-full object-cover"
                   />
